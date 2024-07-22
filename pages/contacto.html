@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On | Rita Vermeer</title>
+    <!--Conexión con CSS/siempre debajo-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-izquierda">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobremi.html">Sobre mí</a></li>
+            </ul>
+            <ul class="navbar-derecha">
+                <li><a href="./colecciones.html">Colecciones</a></li>
+                <li><a href="./cursos.html">Cursos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#" id="navbar-activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Sección 1-Contacto-->
+        <section class="seccion1-contacto">
+            <section class="card-contacto">
+                <div>
+                    <h1>Contactame para conocer más!</h1>                    
+                </div>
+                <form class="formulario-contacto">
+                    <div class="input">
+                        <label for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+                        <label for="mail"></label>
+                        <input type="text" name="mail" id="mail" placeholder="Email">
+                        <label for="message"></label>
+                        <input class="input-message"type="message" name="message" id="message" placeholder="Dejanos tu mensaje">
+                    </div>         
+                    <button class="button-fondoverde">Enviar
+                        <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
+                    </button>
+                </form>                 
+            </section>
+            <!--Foto contacto-->
+            <section>
+                <div>
+                    <img src="../assets/images/photos/Contacto-Foto-1.png" alt="Rita Vermeer en torno alfarero">
+                </div>                   
+            </section> 
+        </section>
+        <!--Sección 2-Contacto-->        
+        <section>
+            <h2 class="desk-subheading-h2-medium">También podés escribirme por Whatsapp<br>o por redes sociales.</h2>
+            <article>
+                <div>
+                    <a href="https://web.whatsapp.com/">
+                        <button class="button-fondoterracota">Whatsapp
+                            <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
+                        </button>
+                    </a>
+                </div>       
+                <div>                    
+                    <a href="https://www.instagram.com/?hl=es">
+                        <button class="button-fondoverde">Instagram
+                            <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
+                        </button>
+                    </a>
+                </div>        
+                <div>                    
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <button class="button-fondonegro">Facebook
+                            <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
+                        </button>
+                    </a>
+                </div>    
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div class="logo-footer">
+                <img src="../assets/images/logos/Logo-Footer.png" alt="Logo footer">
+            </div>
+            <div class="buttons-footer">
+                <a href="https://www.instagram.com/?hl=es" target="_blank">
+                    <button class="button-footer-instagram">Instagram</button>
+                </a>
+                <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                    <button class="button-footer-facebook">Facebook</button>                    
+                </a>
+                <a href="#">
+                    <button class="button-footer-contacto">Contacto</button>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
