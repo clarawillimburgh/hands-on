@@ -57,7 +57,7 @@ body{
 /*Párrafos*/
 p{
     color: #757575;
-    text-align: justify;
+    text-align:justify;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -229,7 +229,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
-    width: 492px;
+    width: 438px;
     grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
@@ -378,6 +378,7 @@ Card y foto*/
 
 /*------------------------------------------------------------------------------------------------- */
 /*SOBRE MÍ*/
+
 /*Sección 1
 Card y fotos*/
 
@@ -551,39 +552,485 @@ Fotos y cards*/
     object-fit: cover;
 }
 
+/*CURSOS
+/*-------------------------------------------------------------------------------------------------
+*/
+
+/*COLECCIONES
+/*-------------------------------------------------------------------------------------------------
+*/
+
+/*Sección 1
+Texto*/
+
+.s1-colecciones{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 14.125rem;
+    margin-bottom: 7.875rem;
+    justify-content: center;
+}
+
+.s1-colecciones .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.s1-colecciones .texto span{
+    color: #3B838E;
+}
+
+
+/*Sección 2 | Colección-Terra
+*/
+
+.s2-colecciones-terra-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.s2-colecciones-terra-1 .s2-terra-card-y-foto{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 48.4375rem;
+    column-gap: 24px;
+}
+
+/*Terra-Card
+*/
+.s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding-right: 4.875rem;
+}
+
+.s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+/*Terra-Foto
+*/
+.s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Terra-Carrousel (es otra seccion)
+*/
+.s2-colecciones-terra-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem;
+}
+
+/*Terra-Fotos carrousel
+*/
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-1{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-1 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-2{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-2 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-3{
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.s2-colecciones-terra-2 .s2-terra-carrousel .foto-3 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/*Sección 3
+Colección-Armonía*/
+
+.s3-colecciones-armonia-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.s3-colecciones-armonia-1 .s3-armonia-card-y-foto{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 48.4375rem;
+    column-gap: 24px;
+}
+
+/*Armonia Card
+*/
+.s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding-right: 4.875rem;
+}
+
+.s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+/*Armonia-Foto
+*/
+.s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Armonia-Carrousel (es otra seccion)
+*/
+.s3-colecciones-armonia-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 6.25rem;
+}
+
+.s3-colecciones-armonia-2 .s3-armonia-carrousel{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem;
+}
+
+/*Armonia-Fotos carrousel
+*/
+.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-1{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-2{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Sección 4 | Colección-Arce
+*/
+
+.s4-colecciones-arce-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.s4-colecciones-arce-1 .s4-arce-card-y-foto{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 48.4375rem;
+    column-gap: 24px;
+}
+
+/*Terra-Arce
+*/
+.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding-right: 4.875rem;
+}
+
+.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+/*Arce-Foto
+*/
+.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Arce-Carrousel (es otra seccion)
+*/
+.s4-colecciones-arce-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 7.5rem;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem;
+}
+
+/*Arce-Fotos carrousel
+*/
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-1{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-1 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-2{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-2 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-3{
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.s4-colecciones-arce-2 .s4-arce-carrousel .foto-3 img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/*CURSOS
+--------------------------------------------------------------------------------------------------- */
+
+/*Sección 1-Introducción
+Card y fotos*/
+.s1-cursos-introduccion{
+    background-color: #C0B4A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    padding-bottom: 6.25rem;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos{
+    background-color: #f7f5f5;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 673px 66px 396px;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+/*Card*/
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card{
+    background-color: #d0e657;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 90%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self:center;
+    justify-self: left;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+/*Fotos*/
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Sección 2-Cursos presenciales
+*/
+.s2-cursos-presenciales{
+    background-color: #9D9D9D;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.s2-cursos-presenciales .titulo{
+    background-color: #d0e657;
+    width: 80%;
+    margin-bottom: 3.125rem;
+}
+
+/*Cards*/
+/* 
+.s2-cursos-presenciales .card-taller-adultos{
+    background-color: #e4aed2;
+    width: 100%
+    height: 624px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+} 
+
+.card-taller-adultos .card{
+    background-color: #cd326b;
+    display: flex;
+    flex-direction: row;
+    width: 140%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-taller-adultos .card .texto-y-boton{
+    background-color: #8cd25b;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 31.25rem;
+    padding-left: 25%;
+}
+
+.card-taller-adultos .card .texto-y-boton .foto{
+    position: absolute;
+} */
+
+
 /*---------------------------------------------------------------------------------------------------------------*/
 /*BOTONES*/
-.button-fondonegro{
+
+.button-fondo-terracota{
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: flex-end;
-    color: #FFF;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    background-color: #171717;
-    padding: 20px;
-    border: none;
-}
-
-.button-fondonegro span{
-    text-decoration: none;
-}
-
-.button-fondonegro:hover{
-    background-color: #444444;
-}
-
-.button-fondoterracota{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: flex-end;
-    color: #FFF;
+    color: #ffffff;
     text-decoration: none;
     font-family: Roboto;
     font-size: 22px;
@@ -595,24 +1042,24 @@ Fotos y cards*/
     border: none;
 }
 
-.button-fondoblanco{
+.button-fondo-negro{
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: flex-end;
-    color: #515151;
+    color: #ffffff;
     text-decoration: none;
     font-family: Roboto;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    background-color: #ffffff;
+    background-color: #171717;
     padding: 20px;
     border: none;
 }
 
-.button-fondoverde{
+.button-fondo-verde{
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -629,7 +1076,22 @@ Fotos y cards*/
     border: none;
 }
 
-
+.button-fondo-blanco{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    color: #171717;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #ffffff;
+    padding: 20px;
+    border: none;
+}
 
 h1{
     color: #171717;    
@@ -697,40 +1159,14 @@ h1{
     line-height: normal;   
 }
 
-/*CURSOS*/
 
-.card-tallerdeadultos{
-    background-color: #F0EEE2;
-    margin-top: 50px;
-}
-
-.card-tallerdeniños{
-    background-color: #F0EEE2;
-    margin-top: 50px;
-}
-
-.card-tecnicasceramicas{
-    background-color: #F0EEE2;
-    margin-top: 50px;
-}
-
-.card-esmaltes{
-    background-color: #F0EEE2;
-    margin-top: 50px;
-}
-
-.card-pastas{
-    background-color: #F0EEE2;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-/*CONTACTO*/
+/*
+/*CONTACTO
 .formulario-contacto{
     background-color:#E9E7D6;
 }
 
-/*Input nombre y email*/
+/*Input nombre y email
 
 .formulario-contacto .input input{
     background-color:#ffffff;
@@ -773,4 +1209,4 @@ h1{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-}
+}*/
