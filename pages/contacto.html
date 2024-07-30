@@ -5,28 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hands On | Rita Vermeer</title>
     <!--Conexión con CSS/siempre debajo-->
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS local-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="navbar-izquierda">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./sobremi.html">Sobre mí</a></li>
-            </ul>
-            <ul class="navbar-derecha">
-                <li><a href="./colecciones.html">Colecciones</a></li>
-                <li><a href="./cursos.html">Cursos</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#" id="navbar-activo">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Botón del menú hamburguesa que aparece en pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../assets/images/icons/Menu-hamburguesa.png" alt=""><!--Icono del menú hamburguesa -->
+                </button>
+                <!-- Contenedor que se expande y colapsa en pantallas pequeñas -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Lista de navegación para pantallas grandes (izquierda) -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 left-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobremi.html">Sobre mí</a>
+                        </li>
+                    </ul>
+                    <!-- Lista de navegación para pantallas grandes (derecha) -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 right-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./colecciones.html">Colecciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Blog</a>
+                        </li>
+                        <li class="nav-item-active">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
+        <!--Sección 1-CONTACTO -->
+        <section class="s1-contacto">
+            <article class="formulario-y-foto">
+                <div class="titulo-y-formulario">
+                    <div class="titulo">
+                        <h1>Contactame para saber más!</h1>                    
+                    </div>   
+                    <form class="formulario">
+                        <div class="inputs">
+                            <!-- <label for="name">Nombre</label> -->
+                            <input type="text" name="name" id="name" placeholder="Nombre y apellido">
+
+                            <!-- <label for="mail">Mail</label> -->
+                            <input type="text" name="mail" id="mail" placeholder="Email">                        
+
+                            <!-- <label for="message">Dejanos tu mensaje</label> -->
+                            <!-- <input class="input-message"type="message" name="message" id="message" placeholder="Dejanos tu mensaje">     -->
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Dejanos tu mensaje"></textarea>
+                            <button class="button-fondo-verde">Enviar
+                                <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
+                            </button>                                 
+                        </div>
+                    </form>   
+                </div>
+                <div class="foto">
+                    <img src="../assets/images/photos/Contacto-Foto-1.png" alt="Rita Vermeer en torno alfarero">
+                </div>
+            </article>
+        </section>
+
+
         <!--Sección 1-Contacto-->
-        <section class="seccion1-contacto">
+        <!-- <section class="seccion1-contacto">
             <section class="card-contacto">
                 <div>
                     <h1>Contactame para conocer más!</h1>                    
@@ -44,16 +101,17 @@
                         <img src="../assets/images/icons/Flecha-Button.png" alt="Flechita botón">
                     </button>
                 </form>                 
-            </section>
+            </section> -->
             <!--Foto contacto-->
-            <section>
+            <!-- <section>
                 <div>
                     <img src="../assets/images/photos/Contacto-Foto-1.png" alt="Rita Vermeer en torno alfarero">
                 </div>                   
             </section> 
-        </section>
+        </section> -->
+
         <!--Sección 2-Contacto-->        
-        <section>
+        <!-- <section>
             <h2 class="desk-subheading-h2-medium">También podés escribirme por Whatsapp<br>o por redes sociales.</h2>
             <article>
                 <div>
@@ -78,11 +136,11 @@
                     </a>
                 </div>    
             </article>
-        </section>
+        </section> -->
     </main>
 
-    <footer>
-        <section>
+    <footer class="contenedor-footer">
+        <section class="footer">
             <div class="logo-footer">
                 <img src="../assets/images/logos/Logo-Footer.png" alt="Logo footer">
             </div>
@@ -93,11 +151,14 @@
                 <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
                     <button class="button-footer-facebook">Facebook</button>                    
                 </a>
-                <a href="#">
+                <a href="../pages/contacto.html">
                     <button class="button-footer-contacto">Contacto</button>
                 </a>
             </div>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
