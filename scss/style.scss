@@ -1,0 +1,52 @@
+/*1ero se llama a todo lo que corresponde a Utilities*/
+
+/*2do se llama a todo lo que corresponde a Base*/
+
+/*3ero se llama al layout*/
+
+/*4to se llama a los componentes*/
+
+/*SIEMPRE AL FINAL se llama a los media-query
+Si estamos de desktop a mobile - DECRECIENTE
+Si estamos de mobible a desktop - CRECIENTE */
+
+/*UTILITIES*/
+
+/*BASE*/
+@import "./base/reset";
+@import "./base/fonts";
+
+
+/*------------------------*/
+/*INICIO*/
+/*Sección 1*/
+
+.s1-inicio{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    .s1-inicio-cards-y-fotos{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 534px 264px 487px;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        .s1-inicio-card-1{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 3.5rem;
+            width: 438px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: center;
+            justify-self: left;
+        }
+    }
+}
+
