@@ -1,0 +1,34 @@
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+
+/*NAVBAR BOOTSTRAP*/
+/*header*/
+
+/* Estilos para pantallas de 1024px y mayores */
+
+@media (min-width: 1024px) {
+    /* Oculta el botón del menú hamburguesa en pantallas grandes */
+    .navbar-toggler {
+    display: none;
+    }
+    
+    /* Asegura que el menú colapsado esté visible en pantallas grandes */
+    .navbar-collapse {
+    display: flex;
+    }
+    
+    /* Muestra los elementos de navegación en fila */
+    .navbar-nav {
+    flex-direction: row;
+    }
+    
+    /* Alinea la lista de navegación de la izquierda a la izquierda */
+    .left-nav {
+    margin-right: auto; 
+    }
+    
+    /* Alinea la lista de navegación de la derecha a la derecha */
+    .right-nav {
+    margin-left: auto;
+    }
+}

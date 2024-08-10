@@ -1,0 +1,60 @@
+/*BOTONES*/
+.button-fondo-negro{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;   
+    font-weight: 500;
+    background-color:map-get($colors , color-negro);
+    padding: 20px;
+    border: none;
+}
+
+.button-fondo-terracota{
+    @extend .button-fondo-negro;
+    background-color: #AD6140;
+}
+
+.button-fondo-verde{
+    @extend .button-fondo-negro;
+    background-color: #3B838E;
+}
+
+.button-fondo-blanco{
+    @extend .button-fondo-negro;
+    background-color:map-get($colors , color-blanco);
+    color: map-get($colors , color-negro);
+}
+
+/*BOTONES FOOTER*/
+.button-footer-instagram{
+    font-family: Roboto;
+    font-size: map-get($font-size , dieciocho);
+    font-weight: 500;    
+    font-style: normal;
+    line-height: normal;    
+    display: inline-flex;
+    padding: 20px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: map-get($colors , color-blanco);
+    color: map-get($colors , color-negro);
+}
+
+.button-footer-facebook{
+    @extend .button-footer-instagram;
+}
+
+.button-footer-contacto{
+    @extend .button-footer-instagram;
+    background-color:map-get($colors , color-terracota);
+    color: map-get($colors , color-blanco);
+}

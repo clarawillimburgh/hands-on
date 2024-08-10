@@ -1,67 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*TIPOGRAFÍAS Y ESTILOS*/
-.h2-beige{
-    color: #C0B4A9;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+/*fonts*/
+
+/*h1*/
+h1{
+    @include h1-style(map-get($colors, color-negro), map-get($font-size,treintayocho));
 }
 
+/*h2-25*/
 .h2-negro{
-    color:#171717;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    @include h2-style(map-get($colors, color-negro), map-get($font-size, veinticinco));
+}
+
+.h2-beige{
+    @include h2-style(map-get($colors, color-arena), map-get($font-size, veinticinco));
 }
 
 .h2-terracota{
-    color:#AD6140;
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    @include h2-style(map-get($colors, color-terracota), map-get($font-size, veinticinco));
 }
 
-.desk-subheading-h2-regular{
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+/*h2-38*/
+.h2-38-negro{
+    @include h2-38-style(map-get($colors,color-negro), map-get($font-size, treintayocho));
 }
 
-.desk-subheading-h2-medium{
-    font-family: Roboto;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.h2-38-terracota{
+    @include h2-38-style(map-get($colors,color-terracota), map-get($font-size, treintayocho)); 
+}
+
+.h2-38-arena{
+    @include h2-38-style(map-get($colors,color-arena), map-get($font-size, treintayocho));
+}
+
+.h2-38-verde{
+    @include h2-38-style(map-get($colors,color-verde), map-get($font-size, treintayocho));
+}
+
+/*h3*/
+.h3-regular{
+    @include h3-style(map-get($colors,color-negro), map-get($font-size, veinticinco), map-get($font-weight,quinientos));
+}
+
+.h3-medium{
+    @include h3-style(map-get($colors,color-negro), map-get($font-size, veinticinco), map-get($font-weight,seiscientos));
 }
 
 /*Párrafos*/
 p{
-    color: #757575;
-    text-align:justify;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    /*word-wrap: break-word;*/
+    @include p-style(map-get($colors,color-gris),map-get($font-size,veinte),map-get($font-weight,cuatrocientos));
 }
 
-.p-negrita{
-    color: #171717;
-    text-align: justify;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.lista .p-negrita{
+    @include p-style(map-get($colors,color-negro),map-get($font-size,veinte),map-get($font-weight,seiscientos));
 }

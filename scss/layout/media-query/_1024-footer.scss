@@ -1,0 +1,29 @@
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+
+/*Footer*/
+@media (max-width:1024px){
+    .contenedor-footer{
+        @include flex-contenedor;
+        background-color: map-get($colors , color-negro);
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            justify-content: space-between;
+            width: 88%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            .buttons-footer{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            .logo-footer{
+                img{
+                    width: 117px;
+                }
+            }
+        }
+    }
+}

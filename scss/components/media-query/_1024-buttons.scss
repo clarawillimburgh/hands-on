@@ -1,0 +1,36 @@
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+
+/*Buttons*/
+
+@media (max-width:1024px){
+    /*BOTONES*/
+    button{
+        img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    .button-fondo-negro{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 16px;
+    }
+    .button-fondo-terracota{
+        background-color: map-get($colors , color-terracota);
+    }
+    .button-fondo-verde{
+        background-color: map-get($colors , color-verde);
+    }
+    .button-fondo-blanco{
+        background-color: map-get($colors , color-blanco);
+        color: map-get($colors, color-negro);
+    }
+    
+    /*BOTONES FOOTER*/
+    .button-footer-instagram{
+        font-size: map-get($font-size , trece);
+        padding: 10px;
+    }
+}
+

@@ -588,7 +588,7 @@ Card y fotos*/
 /*Sección 2
 Texto*/
 
-.s2-sobremi{
+.s2-sobre-mi{
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 10%;
@@ -780,7 +780,7 @@ Texto*/
     margin-bottom: 6.25rem;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel{
+.s2-colecciones-terra-2 .terra-carrousel{
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -790,37 +790,37 @@ Texto*/
 
 /*Terra-Fotos carrousel
 */
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-1{
+.s2-colecciones-terra-2 .terra-carrousel .foto-1{
     display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-1 img{
+.s2-colecciones-terra-2 .terra-carrousel .foto-1 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-2{
+.s2-colecciones-terra-2 .terra-carrousel .foto-2{
     display: flex;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-2 img{
+.s2-colecciones-terra-2 .terra-carrousel .foto-2 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-3{
+.s2-colecciones-terra-2 .terra-carrousel .foto-3{
     display: flex;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-.s2-colecciones-terra-2 .s2-terra-carrousel .foto-3 img{
+.s2-colecciones-terra-2 .terra-carrousel .foto-3 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -887,7 +887,7 @@ Colección-Armonía*/
     margin-bottom: 6.25rem;
 }
 
-.s3-colecciones-armonia-2 .s3-armonia-carrousel{
+.s3-colecciones-armonia-2 .armonia-carrousel{
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -897,24 +897,24 @@ Colección-Armonía*/
 
 /*Armonia-Fotos carrousel
 */
-.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-1{
+.s3-colecciones-armonia-2 .armonia-carrousel .foto-1{
     display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-1 img{
+.s3-colecciones-armonia-2 .armonia-carrousel .foto-1 img{
     width: 100%;
     object-fit: cover;
 }
 
-.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-2{
+.s3-colecciones-armonia-2 .armonia-carrousel .foto-2{
     display: flex;
     grid-column: 2/4;
     grid-row: 1/2;
 }
 
-.s3-colecciones-armonia-2 .s3-armonia-carrousel .foto-2 img{
+.s3-colecciones-armonia-2 .armonia-carrousel .foto-2 img{
     width: 100%;
     object-fit: cover;
 }
@@ -958,7 +958,7 @@ Colección-Armonía*/
 
 /*Arce-Foto
 */
-.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto.foto{
+.s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto{
     display: flex;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -980,7 +980,7 @@ Colección-Armonía*/
     margin-bottom: 7.5rem;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel{
+.s4-colecciones-arce-2 .arce-carrousel{
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -990,37 +990,37 @@ Colección-Armonía*/
 
 /*Arce-Fotos carrousel
 */
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-1{
+.s4-colecciones-arce-2 .arce-carrousel .foto-1{
     display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-1 img{
+.s4-colecciones-arce-2 .arce-carrousel .foto-1 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-2{
+.s4-colecciones-arce-2 .arce-carrousel .foto-2{
     display: flex;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-2 img{
+.s4-colecciones-arce-2 .arce-carrousel .foto-2 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-3{
+.s4-colecciones-arce-2 .arce-carrousel .foto-3{
     display: flex;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
-.s4-colecciones-arce-2 .s4-arce-carrousel .foto-3 img{
+.s4-colecciones-arce-2 .arce-carrousel .foto-3 img{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -1826,8 +1826,8 @@ h1{
 
 
 /*------------------------------------------------------------*/
-    /*INICIO*/
-    /*Sección 1*/
+    /*INICIO
+    Sección 1*/
 
     .s1-inicio{
         background-color: #ffffff;
@@ -1870,6 +1870,7 @@ h1{
     .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img{
         width: 281px;
     }
+
 
     /*Foto 1*/
     .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1{

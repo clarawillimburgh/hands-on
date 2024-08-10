@@ -1,0 +1,96 @@
+/*CONTACTO*/
+/*main-contacto*/
+
+/*Sección 1--------------------------*/
+/*Formulario y foto*/
+.s1-contacto{
+    @include flex-contenedor;
+    margin-top: 7.875rem;
+    margin-bottom: 11.25rem;
+    .formulario-y-foto{
+        @include grid-column;
+        grid-template-rows: 54.875rem;
+        .titulo-y-formulario{
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px;
+            gap: 1.875rem;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            justify-content: end;
+            .titulo span{
+                color:map-get($colors , color-terracota );
+            }
+            .formulario{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 1.5rem;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    padding-top: 50px;
+                    padding-bottom: 120px;
+                    background-color:map-get($colors , color-beige);
+                    align-items: end;
+                    input{
+                        width: 100%;
+                        height: 64px;
+                        border-style: none;
+                        padding: 20px;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    textarea{
+                        width:100%;
+                        height: 280px;
+                        border-style: none;
+                        padding: 20px;
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+        .foto{
+            display: flex;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            img{
+                @include img-cover;
+            }
+        }
+    }
+}
+
+/*Sección 2--------------------------*/
+.s2-contacto{
+    @include flex-contenedor;
+    margin-bottom: 11.25rem;
+    .texto-y-botones{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        .texto{
+            display: flex;
+            .texto-contacto{
+            font-weight:450;
+            }
+        }  
+        .botones{
+        display: flex;
+        flex-direction: row;
+        gap:24px;
+        }          
+    }
+}

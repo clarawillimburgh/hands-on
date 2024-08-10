@@ -1,13 +1,10 @@
 @charset "UTF-8";
-/*1ero se llama a todo lo que corresponde a Utilities*/
-/*2do se llama a todo lo que corresponde a Base*/
-/*3ero se llama al layout*/
-/*4to se llama a los componentes*/
-/*SIEMPRE AL FINAL se llama a los media-query
-Si estamos de desktop a mobile - DECRECIENTE
-Si estamos de mobible a desktop - CRECIENTE */
-/*UTILITIES*/
-/*BASE*/
+/*1 UTILITIES*/
+/*mixins*/
+/*FONTS MIXINS*/
+/*COLORES*/
+/*TIPOGRAFÍAS*/
+/*2 BASE*/
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -18,67 +15,150 @@ a {
   text-decoration: none; }
 
 /*TIPOGRAFÍAS Y ESTILOS*/
-.h2-beige {
-  color: #C0B4A9;
+/*fonts*/
+/*h1*/
+h1 {
+  color: #171717;
+  font-size: 2.375rem;
   font-family: Roboto;
-  font-size: 25px;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 500;
   line-height: normal; }
 
+/*h2-25*/
 .h2-negro {
   color: #171717;
+  font-size: 1.5625rem;
   font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+  line-height: normal; }
+
+.h2-beige {
+  color: #C0B4A9;
+  font-size: 1.5625rem;
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
   line-height: normal; }
 
 .h2-terracota {
   color: #AD6140;
+  font-size: 1.5625rem;
   font-family: Roboto;
-  font-size: 25px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
   line-height: normal; }
 
-.desk-subheading-h2-regular {
+/*h2-38*/
+.h2-38-negro {
+  color: #171717;
+  font-size: 2.375rem;
   font-family: Roboto;
-  font-size: 25px;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 400;
   line-height: normal; }
 
-.desk-subheading-h2-medium {
+.h2-38-terracota {
+  color: #AD6140;
+  font-size: 2.375rem;
   font-family: Roboto;
-  font-size: 25px;
+  font-weight: 700;
   font-style: normal;
+  line-height: normal; }
+
+.h2-38-arena {
+  color: #C0B4A9;
+  font-size: 2.375rem;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal; }
+
+.h2-38-verde {
+  color: #3B838E;
+  font-size: 2.375rem;
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal; }
+
+/*h3*/
+.h3-regular {
+  color: #171717;
+  font-size: 1.5625rem;
   font-weight: 500;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: normal; }
+
+.h3-medium {
+  color: #171717;
+  font-size: 1.5625rem;
+  font-weight: 600;
+  font-family: Roboto;
+  font-style: normal;
   line-height: normal; }
 
 /*Párrafos*/
 p {
   color: #757575;
-  text-align: justify;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: normal;
-  /*word-wrap: break-word;*/ }
-
-.p-negrita {
-  color: #171717;
-  text-align: justify;
   font-family: Roboto;
-  font-size: 20px;
+  text-align: justify;
   font-style: normal;
-  font-weight: 700;
   line-height: normal; }
 
-/*------------------------*/
+.lista .p-negrita {
+  color: #171717;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: Roboto;
+  text-align: justify;
+  font-style: normal;
+  line-height: normal; }
+
+/*3 LAYOUT*/
+/*NAVBAR BOOTSTRAP*/
+/*header*/
+.navbar {
+  background-color: #f0f0f0 !important;
+  width: 100%;
+  padding: 30px 10% !important;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  order: 1;
+  z-index: 1000; }
+  .navbar .navbar-toggler {
+    padding: 4px; }
+    .navbar .navbar-toggler img {
+      width: 30px;
+      height: 30px; }
+
+.nav-item a {
+  text-decoration: none;
+  color: #9D9D9D;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal; }
+
+.nav-item-active {
+  text-decoration: underline;
+  color: #171717;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal; }
+
 /*INICIO*/
-/*Sección 1*/
+/*main-index*/
+/*Sección 1--------------------------*/
 .s1-inicio {
   display: flex;
   justify-content: center;
@@ -91,16 +171,2328 @@ p {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 534px 264px 487px;
     column-gap: 1.5rem;
+    grid-template-rows: 534px 264px 487px;
     row-gap: 1.5rem; }
     .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      align-self: center;
+      justify-self: left;
       gap: 3.5rem;
       width: 438px;
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img {
+          width: 435px; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      position: relative; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal {
+        position: absolute;
+        right: -5%;
+        top: 8%; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-2 {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center;
+      gap: 3.5rem;
+      width: 410px;
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-2 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/4; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*Sección 2--------------------------*/
+.s2-inicio {
+  background-color: #E9E7D6;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
+  margin-left: 10%;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+  .s2-inicio .s2-inicio-card-y-fotos {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal {
+      position: absolute;
+      left: 8%; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-fotos {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-card {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      width: 17.5rem;
+      margin-left: 6%; }
+
+/*Sección 3--------------------------*/
+.s3-inicio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 7.5rem; }
+  .s3-inicio .s3-inicio-card-y-foto {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 46.9375rem; }
+    .s3-inicio .s3-inicio-card-y-foto .s3-inicio-card {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center;
+      gap: 3.5rem;
+      width: 363px;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      position: relative; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal {
+        position: absolute;
+        left: 95%;
+        top: 8%; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*SOBRE MÍ*/
+/*main-sobremi*/
+/*Sección 1--------------------------*/
+.s1-sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  padding-top: 7.875rem; }
+  .s1-sobre-mi .s1-sobre-mi-cards-y-fotos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 625px 172px 620px;
+    row-gap: 1.5rem; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+      justify-items: left;
+      gap: 1.875rem;
+      width: 95%;
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span1, .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+        color: #3B838E;
+        font-size: 2.375rem;
+        font-family: Roboto;
+        font-weight: 700;
+        font-style: normal;
+        line-height: normal; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+        font-weight: 400;
+        color: #171717; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      position: relative; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal {
+        position: absolute;
+        right: -5%;
+        top: 8%; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-2 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/4; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-3 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 3/4; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*Sección 2--------------------------*/
+.s2-sobre-mi {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+/*Sección 3--------------------------*/
+.s3-sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  padding-bottom: 7.5rem; }
+  .s3-sobre-mi .s3-sobre-mi-cards-y-fotos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 709px 88px 709px;
+    row-gap: 1.5rem;
+    justify-items: center; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1.875rem;
+      width: 85%;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      align-self: center; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 span {
+        color: #3B838E;
+        font-family: Roboto;
+        font-size: 2.375rem;
+        font-style: normal;
+        line-height: normal;
+        font-weight: 700; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 1/3;
+      position: relative; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 .rayitas-beige-horizontal {
+        width: 51px;
+        position: absolute;
+        left: 95%;
+        top: 6%; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      width: 492px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      align-self: center;
+      justify-self: left; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 2/4; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*COLECCIONES*/
+/*main-colecciones*/
+/*Sección 1--------------------------*/
+.s1-colecciones {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 14.125rem;
+  margin-bottom: 7.875rem;
+  justify-content: center; }
+  .s1-colecciones .texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; }
+    .s1-colecciones .texto span {
+      color: #3B838E; }
+
+/*Sección 2--------------------------*/
+/*Colección-Terra*/
+.s2-colecciones-terra-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 24px; }
+  .s2-colecciones-terra-1 .s2-terra-card-y-foto {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 48.4375rem; }
+    .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      width: 90%; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+    .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      position: relative; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto .rayitas-gris-vertical {
+        position: absolute;
+        left: 20px;
+        top: -25px; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.s2-colecciones-terra-2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 6.25rem; }
+  .s2-colecciones-terra-2 .terra-carrousel {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem; }
+    .s2-colecciones-terra-2 .terra-carrousel .foto-1 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-1 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+    .s2-colecciones-terra-2 .terra-carrousel .foto-2 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-2 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+    .s2-colecciones-terra-2 .terra-carrousel .foto-3 {
+      display: flex;
+      grid-column: 3/4;
+      grid-row: 1/2; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-3 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+
+/*Sección 3--------------------------*/
+/*Colección-Armonía*/
+.s3-colecciones-armonia-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 24px; }
+  .s3-colecciones-armonia-1 .s3-armonia-card-y-foto {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 48.4375rem; }
+    .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      width: 90%; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+    .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.s3-colecciones-armonia-2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 6.25rem; }
+  .s3-colecciones-armonia-2 .armonia-carrousel {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem; }
+    .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 {
+      display: flex;
+      grid-column: 2/4;
+      grid-row: 1/2; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*Sección 4--------------------------*/
+/*Colección-Arce*/
+.s4-colecciones-arce-1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 1.5rem; }
+  .s4-colecciones-arce-1 .s4-arce-card-y-foto {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 48.4375rem; }
+    .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      width: 90%; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card .texto {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem; }
+    .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.s4-colecciones-arce-2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 7.5rem; }
+  .s4-colecciones-arce-2 .arce-carrousel {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    column-gap: 1.5rem; }
+    .s4-colecciones-arce-2 .arce-carrousel .foto-1 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 1/2; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-1 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+    .s4-colecciones-arce-2 .arce-carrousel .foto-2 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-2 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+    .s4-colecciones-arce-2 .arce-carrousel .foto-3 {
+      display: flex;
+      grid-column: 3/4;
+      grid-row: 1/2; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-3 img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover; }
+
+/*CURSOS*/
+/*main-cursos*/
+/*Sección 1--------------------------*/
+.s1-cursos-introduccion {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  padding-top: 7.875rem;
+  padding-bottom: 6.25rem; }
+  .s1-cursos-introduccion .s1-cursos-card-y-fotos {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 673px 66px 396px;
+    row-gap: 1.5rem; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5rem;
+      width: 90%;
       grid-column: 1/2;
       grid-row: 1/2;
       align-self: center;
       justify-self: left; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/3; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/4; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 3/4; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*Sección 2--------------------------*/
+/*Cursos presenciales*/
+.s2-cursos-presenciales {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  flex-direction: column; }
+  .s2-cursos-presenciales .titulo {
+    width: 80%;
+    margin-bottom: 3.125rem; }
+
+/*Cards cursos presenciales*/
+.taller-adultos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-rows: 80px 462px 80px;
+  margin-bottom: 3.125rem; }
+  .taller-adultos .fondo {
+    background-color: #E9E7D6;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  .taller-adultos .card {
+    border-style: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+    .taller-adultos .card .texto-y-boton {
+      display: flex;
+      flex-direction: column;
+      width: 570px;
+      gap: 3.5rem;
+      padding-right: 50px;
+      flex-wrap: wrap; }
+      .taller-adultos .card .texto-y-boton .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .taller-adultos .card .texto-y-boton .lista {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .taller-adultos .card .texto-y-boton div p {
+        color: #757575;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+.taller-niños {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-rows: 80px 462px 80px;
+  margin-bottom: 3.125rem; }
+  .taller-niños .fondo {
+    background-color: #E9E7D6;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  .taller-niños .card {
+    border-style: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+    .taller-niños .card .texto-y-boton {
+      display: flex;
+      flex-direction: column;
+      width: 570px;
+      gap: 3.5rem;
+      padding-right: 50px;
+      flex-wrap: wrap; }
+      .taller-niños .card .texto-y-boton .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .taller-niños .card .texto-y-boton .lista {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .taller-niños .card .texto-y-boton div p {
+        color: #757575;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+/*Cursos a distancia*/
+.s2-cursos-a-distancia {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  flex-direction: column; }
+  .s2-cursos-a-distancia .descripcion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.125rem;
+    gap: 30px; }
+
+/*Cards cursos a distancia*/
+/*Técnicas cerámicas*/
+.tecnicas-ceramicas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-rows: 80px 462px 80px;
+  margin-bottom: 3.125rem; }
+  .tecnicas-ceramicas .fondo {
+    background-color: #E9E7D6;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  .tecnicas-ceramicas .card {
+    border-style: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+    .tecnicas-ceramicas .card .texto-y-boton {
+      display: flex;
+      flex-direction: column;
+      width: 532px;
+      gap: 3.5rem;
+      padding-right: 50px;
+      flex-wrap: wrap; }
+      .tecnicas-ceramicas .card .texto-y-boton .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .tecnicas-ceramicas .card .texto-y-boton .lista {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .tecnicas-ceramicas .card .texto-y-boton div p {
+        color: #757575;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+/*Esmaltes*/
+.esmaltes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-rows: 80px 462px 80px;
+  margin-bottom: 3.125rem; }
+  .esmaltes .fondo {
+    background-color: #E9E7D6;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  .esmaltes .card {
+    border-style: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+    .esmaltes .card .texto-y-boton {
+      display: flex;
+      flex-direction: column;
+      width: 532px;
+      gap: 3.5rem;
+      padding-right: 50px;
+      flex-wrap: wrap; }
+      .esmaltes .card .texto-y-boton .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .esmaltes .card .texto-y-boton .lista {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .esmaltes .card .texto-y-boton div p {
+        color: #757575;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+/*Pastas*/
+.pastas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-rows: 80px 462px 80px;
+  margin-bottom: 3.125rem; }
+  .pastas .fondo {
+    background-color: #E9E7D6;
+    display: flex;
+    flex-direction: row;
+    grid-row: 1/4;
+    grid-column: 1/4; }
+  .pastas .card {
+    border-style: none;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    grid-row: 2/3;
+    grid-column: 2/5;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+    .pastas .card .texto-y-boton {
+      display: flex;
+      flex-direction: column;
+      width: 532px;
+      gap: 3.5rem;
+      padding-right: 50px;
+      flex-wrap: wrap; }
+      .pastas .card .texto-y-boton .titulo {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .pastas .card .texto-y-boton .lista {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+      .pastas .card .texto-y-boton div p {
+        color: #757575;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+
+/*CONTACTO*/
+/*main-contacto*/
+/*Sección 1--------------------------*/
+/*Formulario y foto*/
+.s1-contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-top: 7.875rem;
+  margin-bottom: 11.25rem; }
+  .s1-contacto .formulario-y-foto {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    grid-template-rows: 54.875rem; }
+    .s1-contacto .formulario-y-foto .titulo-y-formulario {
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      gap: 1.875rem;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      justify-content: end; }
+      .s1-contacto .formulario-y-foto .titulo-y-formulario .titulo span {
+        color: #AD6140; }
+      .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 1.5rem;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-top: 50px;
+          padding-bottom: 120px;
+          background-color: #E9E7D6;
+          align-items: end; }
+          .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs input {
+            width: 100%;
+            height: 64px;
+            border-style: none;
+            padding: 20px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; }
+          .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs textarea {
+            width: 100%;
+            height: 280px;
+            border-style: none;
+            padding: 20px;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal; }
+    .s1-contacto .formulario-y-foto .foto {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/2; }
+      .s1-contacto .formulario-y-foto .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+/*Sección 2--------------------------*/
+.s2-contacto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  margin-bottom: 11.25rem; }
+  .s2-contacto .texto-y-botones {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center; }
+    .s2-contacto .texto-y-botones .texto {
+      display: flex; }
+      .s2-contacto .texto-y-botones .texto .texto-contacto {
+        font-weight: 450; }
+    .s2-contacto .texto-y-botones .botones {
+      display: flex;
+      flex-direction: row;
+      gap: 24px; }
+
+/*FOOTER*/
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  background-color: #171717; }
+  .contenedor-footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem; }
+    .contenedor-footer .footer .buttons-footer {
+      display: flex;
+      align-items: center;
+      gap: 24px; }
+
+/*4 COMPONENTS*/
+/*BOTONES*/
+.button-fondo-negro, .button-fondo-terracota, .button-fondo-verde, .button-fondo-blanco {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 500;
+  background-color: #171717;
+  padding: 20px;
+  border: none; }
+
+.button-fondo-terracota {
+  background-color: #AD6140; }
+
+.button-fondo-verde {
+  background-color: #3B838E; }
+
+.button-fondo-blanco {
+  background-color: #FFFFFF;
+  color: #171717; }
+
+/*BOTONES FOOTER*/
+.button-footer-instagram, .button-footer-facebook, .button-footer-contacto {
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  display: inline-flex;
+  padding: 20px;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFFFFF;
+  color: #171717; }
+
+.button-footer-contacto {
+  background-color: #AD6140;
+  color: #FFFFFF; }
+
+/*5 MEDIAQUERY
+Siempre al final
+Desktop a mobile - DECRECIENTE
+Mobible a desktop - CRECIENTE */
+/*1024 UTILITIES*/
+/*1024 BASE*/
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*TIPOGRAFÍAS Y ESTILOS*/
+/*fonts*/
+@media (max-width: 1024px) {
+  /*h1*/
+  h1 {
+    color: #171717;
+    font-size: 1.375rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  /*h2-25*/
+  .h2-negro {
+    color: #171717;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  .h2-beige {
+    color: #C0B4A9;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  .h2-terracota {
+    color: #AD6140;
+    font-size: 1rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  /*h2-38*/
+  .h2-38-negro {
+    color: #171717;
+    font-size: 1.375rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-terracota {
+    color: #AD6140;
+    font-size: 1.375rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-arena {
+    color: #C0B4A9;
+    font-size: 1.375rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-verde {
+    color: #3B838E;
+    font-size: 1.375rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  /*h3*/
+  .h3-regular {
+    color: #171717;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal; }
+  .h3-medium {
+    color: #171717;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal; }
+  /*Párrafos*/
+  p {
+    color: #757575;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    line-height: normal; }
+  main .cursos .texto-y-boton .titulo p {
+    color: #757575;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    line-height: normal; }
+  main .cursos .texto-y-boton .lista p {
+    color: #757575;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    line-height: normal; }
+  .lista .p-negrita {
+    color: #171717;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    line-height: normal; } }
+
+/*375 BASE*/
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*TIPOGRAFÍAS Y ESTILOS*/
+/*fonts*/
+@media (max-width: 375px) {
+  /*h1*/
+  h1 {
+    color: #171717;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  /*h2-25*/
+  .h2-negro {
+    color: #171717;
+    font-size: 0.875rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  .h2-beige {
+    color: #C0B4A9;
+    font-size: 0.875rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  .h2-terracota {
+    color: #AD6140;
+    font-size: 0.875rem;
+    font-family: Roboto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal; }
+  /*h2-38*/
+  .h2-38-negro {
+    color: #171717;
+    font-size: 1.5625rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-terracota {
+    color: #AD6140;
+    font-size: 1.5625rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-arena {
+    color: #C0B4A9;
+    font-size: 1.5625rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  .h2-38-verde {
+    color: #3B838E;
+    font-size: 1.5625rem;
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal; }
+  /*h3*/
+  .h3-regular {
+    color: #171717;
+    font-size: 0.625rem;
+    font-weight: 500;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal; }
+  .h3-medium {
+    color: #171717;
+    font-size: 0.625rem;
+    font-weight: 600;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal; }
+  /*Párrafos*/
+  p {
+    color: #757575;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: Roboto;
+    text-align: justify;
+    font-style: normal;
+    line-height: normal; } }
+
+/*1024 LAYOUT*/
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*NAVBAR BOOTSTRAP*/
+/*header*/
+/* Estilos para pantallas de 1024px y mayores */
+@media (min-width: 1024px) {
+  /* Oculta el botón del menú hamburguesa en pantallas grandes */
+  .navbar-toggler {
+    display: none; }
+  /* Asegura que el menú colapsado esté visible en pantallas grandes */
+  .navbar-collapse {
+    display: flex; }
+  /* Muestra los elementos de navegación en fila */
+  .navbar-nav {
+    flex-direction: row; }
+  /* Alinea la lista de navegación de la izquierda a la izquierda */
+  .left-nav {
+    margin-right: auto; }
+  /* Alinea la lista de navegación de la derecha a la derecha */
+  .right-nav {
+    margin-left: auto; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*main-index*/
+@media (max-width: 1024px) {
+  /*Sección 1*/
+  .s1-inicio .s1-inicio-cards-y-fotos {
+    width: 88%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: 355px 74px 330px;
+    row-gap: 1rem; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 {
+      gap: 2rem;
+      width: 17.5625rem; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto {
+        gap: 1.5rem; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img {
+          width: 281px; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      position: relative; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal {
+        right: -4%; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal img {
+          width: 1.875rem; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-2 {
+      gap: 2rem;
+      width: 15.875rem; }
+  /*Sección 2*/
+  .s2-inicio {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 6%;
+    height: 15.8125rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal {
+      left: 4%; }
+      .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal img {
+        width: 1.875rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-fotos {
+      height: 70%;
+      gap: 1rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-card {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 13rem;
+      margin-left: 6%; }
+  /*Sección 3*/
+  .s3-inicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3rem; }
+    .s3-inicio .s3-inicio-card-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 100%; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-card {
+        gap: 2rem;
+        width: 240px; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal {
+        position: absolute;
+        left: 95%;
+        top: 8%; }
+        .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal img {
+          width: 1.875rem; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*main-sobremi*/
+@media (max-width: 1024px) {
+  /*Sección 1*/
+  .s1-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    padding-bottom: 100px; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 44% 12% 44%;
+      row-gap: 1rem; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card {
+        gap: .625rem;
+        width: 95%; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span1, .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+          font-size: 1.375rem; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal {
+        position: absolute;
+        right: -5%;
+        top: 8%; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal img {
+          width: 30px; }
+  /*Sección 2*/
+  .s2-sobre-mi {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-left: 6%;
+    padding-right: 6%; }
+  /*Sección 3*/
+  .s3-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-bottom: 3rem; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 369px 60px 369px;
+      row-gap: 1rem; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .625rem;
+        width: 85%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 span {
+          color: #3B838E;
+          font-family: Roboto;
+          font-size: 1.375rem;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 700; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        position: relative; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 .rayitas-beige-horizontal {
+          width: 30px;
+          position: absolute;
+          left: 95%;
+          top: 6%; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: center;
+        justify-self: left; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/4; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*main-colecciones*/
+@media (max-width: 1024px) {
+  /*Sección 1*/
+  .s1-colecciones {
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: 126px;
+    margin-bottom: 3.75rem;
+    justify-content: center; }
+    .s1-colecciones .texto {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: .625rem;
+      margin: 0; }
+      .s1-colecciones .texto h1 br {
+        display: none; }
+      .s1-colecciones .texto span {
+        color: #3B838E; }
+  /*Sección 2*/
+  .s2-colecciones-terra-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem; }
+    .s2-colecciones-terra-1 .s2-terra-card-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: auto; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        position: relative; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto .rayitas-gris-vertical {
+          position: absolute;
+          left: 20px;
+          top: -15px; }
+          .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto .rayitas-gris-vertical img {
+            height: 30px; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s2-colecciones-terra-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin-bottom: 3.75rem; }
+    .s2-colecciones-terra-2 .terra-carrousel {
+      max-width: 88%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      column-gap: 1rem; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s2-colecciones-terra-2 .terra-carrousel .foto-1 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-2 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s2-colecciones-terra-2 .terra-carrousel .foto-2 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-3 {
+        display: flex;
+        grid-column: 3/4;
+        grid-row: 1/2; }
+        .s2-colecciones-terra-2 .terra-carrousel .foto-3 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; }
+  /*Sección 3*/
+  /*Colección-Armonía*/
+  .s3-colecciones-armonia-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem; }
+    .s3-colecciones-armonia-1 .s3-armonia-card-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: auto; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%; }
+        .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s3-colecciones-armonia-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3.75rem; }
+    .s3-colecciones-armonia-2 .armonia-carrousel {
+      max-width: 88%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      column-gap: 1rem; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 {
+        display: flex;
+        grid-column: 2/4;
+        grid-row: 1/2; }
+        .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 4*/
+  /*Colección-Arce*/
+  .s4-colecciones-arce-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem; }
+    .s4-colecciones-arce-1 .s4-arce-card-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: auto; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%; }
+        .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s4-colecciones-arce-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3.75rem; }
+    .s4-colecciones-arce-2 .arce-carrousel {
+      max-width: 88%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      column-gap: 1rem; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-1 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-2 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-2 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-3 {
+        display: flex;
+        grid-column: 3/4;
+        grid-row: 1/2; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-3 img {
+          width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*Footer*/
+@media (max-width: 1024px) {
+  .contenedor-footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    background-color: #171717; }
+    .contenedor-footer .footer {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      justify-content: space-between;
+      width: 88%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem; }
+      .contenedor-footer .footer .buttons-footer {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
+      .contenedor-footer .footer .logo-footer img {
+        width: 117px; } }
+
+/*375 LAYOUT*/
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*NAVBAR BOOTSTRAP*/
+/*header*/
+/* Estilos para pantallas menores a 1024px */
+@media (max-width: 1023.98px) {
+  .navbar {
+    background-color: #f0f0f0 !important;
+    width: 100%;
+    padding: 20px 10% !important; }
+  /* Muestra el botón del menú hamburguesa en pantallas pequeñas */
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+    /* Alinea el botón a la derecha */ }
+  /* Oculta el menú colapsado por defecto en pantallas pequeñas */
+  .navbar-collapse {
+    display: none; }
+  /* Muestra el menú colapsado cuando se activa */
+  .navbar-collapse.show {
+    display: block; }
+  /* Muestra los elementos de navegación en columna */
+  .navbar-nav {
+    flex-direction: column; }
+  /* Asegura que ambas listas de navegación se muestren en una columna */
+  .left-nav,
+  .right-nav {
+    display: block; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*main-index*/
+@media (max-width: 375px) {
+  /*Sección 1*/
+  .s1-inicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.5rem;
+    padding-bottom: 1rem; }
+    .s1-inicio .s1-inicio-cards-y-fotos {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 18% 35% 14% 33%;
+      row-gap: 1rem; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem; }
+          .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img {
+            width: 288px; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 {
+        display: flex;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
+          min-width: 100%;
+          object-fit: cover; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal {
+          position: absolute;
+          right: 4%;
+          top: -2%; }
+          .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal img {
+            width: 1.875rem;
+            transform: rotate(90deg); }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 288px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: center;
+        justify-self: left; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2*/
+  .s2-inicio {
+    background-color: #E9E7D6;
+    max-width: 100%;
+    margin-left: 0%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; }
+    .s2-inicio .s2-inicio-card-y-fotos {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 100%;
+      height: auto;
+      gap: 1rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      justify-content: center;
+      align-content: center; }
+      .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal {
+        visibility: hidden; }
+      .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-fotos {
+        max-width: 50%;
+        display: flex;
+        justify-items: flex-end;
+        gap: .875rem;
+        flex-direction: row;
+        object-fit: contain; }
+        .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-fotos img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover; }
+      .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 17.5rem; }
+        .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-card .texto p {
+          width: 90%; }
+  /*Sección 3*/
+  .s3-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .s3-inicio .s3-inicio-card-y-foto {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 22% 78%;
+      row-gap: 1rem; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-card {
+        border-style: .0625rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center; }
+        .s3-inicio .s3-inicio-card-y-foto .s3-inicio-card p {
+          text-align: left; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto {
+        width: 100%;
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative; }
+        .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal {
+          position: absolute;
+          left: 85%;
+          top: -3%; }
+          .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal img {
+            width: 1.875rem;
+            transform: rotate(90deg); }
+        .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*main-sobremi*/
+@media (max-width: 375px) {
+  /*Sección 1*/
+  .s1-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 6.25rem;
+    padding-bottom: 0;
+    overflow-y: hidden; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 16.59% 30.70% 30.23% 22.48%;
+      row-gap: 1rem; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span1, .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+          color: #3B838E;
+          font-size: 1.25rem;
+          font-family: Roboto;
+          font-weight: 700;
+          font-style: normal;
+          line-height: normal; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+          color: #171717;
+          font-size: 1.25rem;
+          font-family: Roboto;
+          font-weight: 400;
+          font-style: normal;
+          line-height: normal; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal {
+          visibility: hidden; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 3/4; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-3 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2*/
+  .s2-sobre-mi {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 6%;
+    padding-right: 6%; }
+  /*Sección 3--------------------------*/
+  .s3-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-bottom: 1rem; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 252px 410px 265px 407px;
+      row-gap: 1rem;
+      justify-items: center; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .5rem;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 span {
+          color: #3B838E;
+          font-family: Roboto;
+          font-size: 1.25rem;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 700; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 .rayitas-beige-horizontal {
+          visibility: hidden; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: center;
+        justify-self: left; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 .texto {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin-bottom: 0;
+        padding-bottom: 0; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*main-colecciones*/
+@media (max-width: 375px) {
+  /*Sección 1*/
+  .s1-colecciones {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 126px;
+    margin-bottom: 20px;
+    justify-content: center; }
+    .s1-colecciones .texto {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: .625rem;
+      margin: 0; }
+      .s1-colecciones .texto h1 {
+        font-weight: 400; }
+      .s1-colecciones .texto span {
+        font-weight: 600;
+        color: #171717; }
+      .s1-colecciones .texto p {
+        display: none; }
+  /*Sección 2*/
+  .s2-colecciones-terra-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1.25rem; }
+    .s2-colecciones-terra-1 .s2-terra-card-y-foto {
+      overflow-y: hidden;
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 45% 55%;
+      row-gap: 1rem; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        position: relative;
+        overflow-y: hidden; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto .rayitas-gris-vertical img {
+          visibility: hidden; }
+        .s2-colecciones-terra-1 .s2-terra-card-y-foto .terra-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s2-colecciones-terra-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    .s2-colecciones-terra-2 .terra-carrousel {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow-y: hidden;
+      grid-template-rows: 33% 67%;
+      row-gap: 1rem; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s2-colecciones-terra-2 .terra-carrousel .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s2-colecciones-terra-2 .terra-carrousel .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s2-colecciones-terra-2 .terra-carrousel .foto-3 {
+        display: none;
+        visibility: hidden; }
+  /*Sección 3*/
+  /*Colección-Armonía*/
+  .s3-colecciones-armonia-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 24px; }
+    .s3-colecciones-armonia-1 .s3-armonia-card-y-foto {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 48% 52%; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%; }
+        .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+      .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto {
+        margin-top: 1rem;
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s3-colecciones-armonia-1 .s3-armonia-card-y-foto .armonia-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s3-colecciones-armonia-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem; }
+    .s3-colecciones-armonia-2 .armonia-carrousel {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 32% 68%;
+      row-gap: 1rem; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 4*/
+  /*Colección-Arce*/
+  .s4-colecciones-arce-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    overflow-y: hidden;
+    margin-top: 2.5rem; }
+    .s4-colecciones-arce-1 .s4-arce-card-y-foto {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 48% 52%;
+      row-gap: 16px; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%; }
+        .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+      .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s4-colecciones-arce-1 .s4-arce-card-y-foto .arce-foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .s4-colecciones-arce-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    .s4-colecciones-arce-2 .arce-carrousel {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      overflow-y: hidden;
+      grid-template-rows: 32% 68%;
+      row-gap: 1rem; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s4-colecciones-arce-2 .arce-carrousel .foto-3 {
+        display: none; }
+        .s4-colecciones-arce-2 .arce-carrousel .foto-3 img {
+          visibility: hidden; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*Footer*/
+@media (max-width: 375px) {
+  .contenedor-footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    background-color: #171717;
+    margin-top: 0; }
+    .contenedor-footer .footer {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      justify-content: space-between;
+      align-items: center;
+      width: 88%;
+      padding-top: 1.875rem;
+      padding-bottom: 1.875rem; }
+      .contenedor-footer .footer .buttons-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; }
+      .contenedor-footer .footer .logo-footer img {
+        width: 117px; } }
+
+/*1024 COMPONENTS*/
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*Buttons*/
+@media (max-width: 1024px) {
+  /*BOTONES*/
+  button img {
+    width: 1rem;
+    height: 1rem; }
+  .button-fondo-negro, .button-fondo-terracota, .button-fondo-verde, .button-fondo-blanco {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px; }
+  .button-fondo-terracota {
+    background-color: #AD6140; }
+  .button-fondo-verde {
+    background-color: #3B838E; }
+  .button-fondo-blanco {
+    background-color: #FFFFFF;
+    color: #171717; }
+  /*BOTONES FOOTER*/
+  .button-footer-instagram, .button-footer-facebook, .button-footer-contacto {
+    font-size: 0.8125rem;
+    padding: 10px; } }
+
+/*375 COMPONENTS*/
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*Buttons*/
+@media (max-width: 375px) {
+  /*BOTONES*/
+  button img {
+    width: .875rem;
+    height: .875rem; }
+  .button-fondo-negro, .button-fondo-terracota, .button-fondo-verde, .button-fondo-blanco {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 14px; }
+  .button-fondo-terracota {
+    background-color: #AD6140; }
+  .button-fondo-verde {
+    background-color: #3B838E; }
+  .button-fondo-blanco {
+    background-color: #FFFFFF;
+    color: #171717; }
+  /*BOTONES FOOTER*/
+  .button-footer-instagram, .button-footer-facebook, .button-footer-contacto {
+    font-size: 0.75rem;
+    width: 75px;
+    padding-top: 12px;
+    padding-bottom: 12px; } }

@@ -1,0 +1,56 @@
+/*MEDIA QUERY*/
+/*max-width 375px*/
+
+/*TIPOGRAFÍAS Y ESTILOS*/
+/*fonts*/
+
+@media (max-width:375px){
+    /*h1*/
+    h1{
+        @include h1-style(map-get($colors, color-negro), map-get($font-size,veinte));
+    }
+
+    /*h2-25*/
+    .h2-negro{
+        @include h2-style(map-get($colors, color-negro), map-get($font-size, catorce));
+    }
+
+    .h2-beige{
+        @include h2-style(map-get($colors, color-arena), map-get($font-size, catorce));
+    }
+
+    .h2-terracota{
+        @include h2-style(map-get($colors, color-terracota), map-get($font-size, catorce));
+    }
+
+    /*h2-38*/
+    .h2-38-negro{
+        @include h2-38-style(map-get($colors,color-negro), map-get($font-size, veinticinco));
+    }
+
+    .h2-38-terracota{
+        @include h2-38-style(map-get($colors,color-terracota), map-get($font-size, veinticinco)); 
+    }
+
+    .h2-38-arena{
+        @include h2-38-style(map-get($colors,color-arena), map-get($font-size, veinticinco));
+    }
+
+    .h2-38-verde{
+        @include h2-38-style(map-get($colors,color-verde), map-get($font-size, veinticinco));
+    }
+
+    /*h3*/
+    .h3-regular{
+        @include h3-style(map-get($colors,color-negro), map-get($font-size, diez), map-get($font-weight,quinientos));
+    }
+
+    .h3-medium{
+        @include h3-style(map-get($colors,color-negro), map-get($font-size, diez), map-get($font-weight,seiscientos));
+    }
+
+    /*Párrafos*/
+    p{
+        @include p-style(map-get($colors,color-gris),map-get($font-size,doce),map-get($font-weight,cuatrocientos));
+    }
+}

@@ -1,0 +1,174 @@
+/*MEDIA QUERY*/
+/*max-width 375px*/
+
+/*main-index*/
+@media (max-width:375px){
+    /*Sección 1*/
+    .s1-inicio{
+        @include flex-contenedor;
+        padding-top: 7.5rem;
+        padding-bottom: 1rem;
+        .s1-inicio-cards-y-fotos{
+            @include grid-column-375;
+            // grid-template-rows: 210px 406px 162px 384px;
+            grid-template-rows: 18% 35% 14% 33%;
+            row-gap: 1rem;
+            .s1-inicio-card-1{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 100%;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                .logo-y-texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    img{
+                        width: 288px;
+                    }
+                }
+            }
+            .s1-inicio-foto-1{
+                display: flex;
+                width: 100%;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                position: relative;
+                img{
+                    min-width: 100%;
+                    object-fit: cover;
+                }
+                .rayitas-beige-horizontal{
+                    position: absolute;
+                    right:4%;
+                    top: -2%;
+                    img{
+                        width: 1.875rem;
+                        transform: rotate(90deg);
+                    }
+                }            
+            }
+            .s1-inicio-card-2{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 288px;
+                grid-column: 1/2;
+                grid-row: 3/4;
+                align-self: center;
+                justify-self: left;
+            }
+            .s1-inicio-foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 4/5;
+                img{
+                @include img-cover;
+                }
+            }
+        }
+    }
+
+    /*Sección 2*/
+    .s2-inicio{
+        background-color:map-get($colors , color-beige);  
+        max-width: 100%;
+        margin-left: 0%;
+        height: 50%;        
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        .s2-inicio-card-y-fotos{
+            display: flex;
+            flex-direction: column;     
+            align-items: flex-start;                   
+            max-width: 100%;
+            height: auto;
+            gap: 1rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            justify-content: center;
+            align-content: center;
+            .rayitas-terracota-horizontal{
+                visibility: hidden;
+            }        
+            .s2-inicio-fotos{
+                max-width: 50%;
+                display: flex;
+                justify-items: flex-end;
+                gap: .875rem;
+                flex-direction: row;
+                object-fit: contain;
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .s2-inicio-card{
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                width: 17.5rem;
+                .texto{
+                    p{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+    /*Sección 3*/
+    .s3-inicio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .s3-inicio-card-y-foto{
+            @include grid-column-375;
+            grid-template-rows: 22% 78% ;
+            row-gap: 1rem;
+            .s3-inicio-card{
+                border-style: .0625rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                justify-self: center;
+                p{
+                    text-align: left;
+                }
+            }
+            .s3-inicio-foto{
+                width: 100%;
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                position: relative;       
+                .rayitas-beige-horizontal{
+                    position:absolute;
+                    left: 85%;
+                    top: -3%;
+                    img{
+                        width: 1.875rem;
+                        transform: rotate(90deg);
+                    }
+                }            
+                .foto{
+                    img{
+                        @include img-cover;
+                    }                
+                }
+            }    
+        }
+    }
+}

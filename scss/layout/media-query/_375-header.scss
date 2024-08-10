@@ -1,0 +1,43 @@
+/*MEDIA QUERY*/
+/*max-width 375px*/
+
+/*NAVBAR BOOTSTRAP*/
+/*header*/
+
+/* Estilos para pantallas menores a 1024px */
+
+@media (max-width: 1023.98px) {
+
+    .navbar{
+        background-color: #f0f0f0 !important;
+        width: 100%;
+        padding: 20px 10% !important;
+        }
+
+    /* Muestra el botón del menú hamburguesa en pantallas pequeñas */
+    .navbar-toggler {
+    display: block;
+    margin-left: auto; /* Alinea el botón a la derecha */
+    }
+    
+    /* Oculta el menú colapsado por defecto en pantallas pequeñas */
+    .navbar-collapse {
+    display: none;
+    }
+    
+    /* Muestra el menú colapsado cuando se activa */
+    .navbar-collapse.show {
+    display: block;
+    }
+    
+    /* Muestra los elementos de navegación en columna */
+    .navbar-nav {
+    flex-direction: column;
+    }
+    
+    /* Asegura que ambas listas de navegación se muestren en una columna */
+    .left-nav,
+    .right-nav {
+    display: block;
+    }
+}

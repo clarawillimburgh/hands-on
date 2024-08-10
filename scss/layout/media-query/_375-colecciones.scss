@@ -1,0 +1,244 @@
+/*MEDIA QUERY*/
+/*max-width 375px*/
+
+/*main-colecciones*/
+@media (max-width:375px){
+        /*Sección 1*/
+        .s1-colecciones{
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-top: 126px;
+            margin-bottom: 20px;
+            justify-content: center;
+            .texto{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                gap: .625rem;
+                margin: 0;
+                h1{
+                    font-weight: 400;
+                    // br{
+                    //     display: flex;
+                    // }
+                }
+                span{
+                    font-weight: 600;
+                    color: map-get($colors , color-negro);
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
+
+    /*Sección 2*/
+    .s2-colecciones-terra-1{
+        @include flex-contenedor;
+        margin-bottom: 1.25rem;
+        .s2-terra-card-y-foto{
+            overflow-y: hidden;
+            @include grid-column-375;
+            grid-template-rows: 45% 55%;
+            // grid-template-rows: 331px 396px;
+            row-gap: 1rem;
+            .terra-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                width: 100%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                }
+            }
+            .terra-foto{
+                .rayitas-gris-vertical{
+                    img{
+                        visibility: hidden;
+                    }
+                }            
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                position: relative;
+                overflow-y: hidden;
+                img{
+                    @include img-cover
+                }
+            }
+        }
+    }
+    
+    .s2-colecciones-terra-2{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        .terra-carrousel{
+            @include grid-column-375;
+            overflow-y: hidden;
+            // grid-template-rows: 196px 396px;
+            grid-template-rows: 33% 67%;
+            row-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-3{
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    
+    /*Sección 3*/
+    /*Colección-Armonía*/
+    .s3-colecciones-armonia-1{
+        @include flex-contenedor;
+        margin-top: 2.5rem;
+        margin-bottom: 24px;
+        .s3-armonia-card-y-foto{
+            @include grid-column-375;
+            // grid-template-rows: 371px 395px;
+            grid-template-rows: 48% 52%;
+            .armonia-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                width: 100%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0rem;
+                }
+            }
+            .armonia-foto{
+                margin-top: 1rem;
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    .s3-colecciones-armonia-2{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        .armonia-carrousel{
+            @include grid-column-375;
+            // grid-template-rows: 180px 396px;
+            grid-template-rows: 32% 68%;
+            row-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+    
+    /*Sección 4*/
+    /*Colección-Arce*/
+    .s4-colecciones-arce-1{
+        @include flex-contenedor;
+        overflow-y: hidden;
+        margin-top: 2.5rem;
+        .s4-arce-card-y-foto{
+            @include grid-column-375;
+            // grid-template-rows: 371px 395px;
+            grid-template-rows: 48% 52%;
+            row-gap: 16px;
+            .arce-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                width: 100%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0rem;
+                }
+            }
+            .arce-foto{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    .s4-colecciones-arce-2{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        .arce-carrousel{
+            @include grid-column-375;
+            overflow-y: hidden;
+            // grid-template-rows: 180px 396px;
+            grid-template-rows: 32% 68%;
+            row-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-3{
+                display: none;
+                img{
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
+

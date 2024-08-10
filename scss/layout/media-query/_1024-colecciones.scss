@@ -1,0 +1,248 @@
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+
+/*main-colecciones*/
+@media (max-width:1024px){
+    /*Sección 1*/
+    .s1-colecciones{
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-top: 126px;
+        margin-bottom:3.75rem;
+        justify-content: center;
+        .texto{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: .625rem;
+            margin: 0;
+            h1{
+                br{
+                    display: none;
+                }
+            }
+            span{
+                color: map-get($colors , color-verde);
+            }
+        }
+    }
+
+    /*Sección 2*/
+    .s2-colecciones-terra-1{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        .s2-terra-card-y-foto{
+            @include grid-column-1024;
+            grid-template-rows: auto;
+            .terra-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 90%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                }
+            }
+            .terra-foto{
+                .rayitas-gris-vertical{
+                    img{
+                        height: 30px;
+                    }
+                    position: absolute;
+                    left: 20px;
+                    top: -15px;
+                }            
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                position: relative;
+                img{
+                    @include img-cover
+                }
+            }
+        }
+    }
+
+    .s2-colecciones-terra-2{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        margin-bottom: 3.75rem;
+        .terra-carrousel{
+            max-width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            column-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+            .foto-3{
+                display: flex;
+                grid-column: 3/4;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    /*Sección 3*/
+    /*Colección-Armonía*/
+    .s3-colecciones-armonia-1{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        .s3-armonia-card-y-foto{
+            @include grid-column-1024;
+            grid-template-rows: auto;
+            .armonia-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 90%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                }
+            }
+            .armonia-foto{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+    .s3-colecciones-armonia-2{
+        @include flex-contenedor;
+        margin-bottom: 3.75rem;
+        .armonia-carrousel{
+            max-width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            column-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 2/4;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    /*Sección 4*/
+    /*Colección-Arce*/
+    .s4-colecciones-arce-1{
+        @include flex-contenedor;
+        margin-bottom: 1rem;
+        .s4-arce-card-y-foto{
+            @include grid-column-1024;
+            grid-template-rows: auto;
+            .arce-card{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 90%;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                }
+            }
+            .arce-foto{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    .s4-colecciones-arce-2{
+        @include flex-contenedor;
+        margin-bottom: 3.75rem;
+        .arce-carrousel{
+            max-width: 88%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            column-gap: 1rem;
+            .foto-1{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+            .foto-3{
+                display: flex;
+                grid-column: 3/4;
+                grid-row: 1/2;
+                img{
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
