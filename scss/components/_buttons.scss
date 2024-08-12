@@ -14,22 +14,39 @@
     background-color:map-get($colors , color-negro);
     padding: 20px;
     border: none;
+    &:hover {
+        transform: scale(1.06);
+        background-color: #806d5c; 
+        border-radius: 6px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); 
+        transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; // Transiciones suaves
+    }
 }
+
 
 .button-fondo-terracota{
     @extend .button-fondo-negro;
     background-color: #AD6140;
+    &:hover{
+        background-color: #9e5739; 
+    }
 }
 
 .button-fondo-verde{
     @extend .button-fondo-negro;
     background-color: #3B838E;
+    &:hover{
+        background-color: #245d66; 
+    }
 }
 
 .button-fondo-blanco{
     @extend .button-fondo-negro;
     background-color:map-get($colors , color-blanco);
     color: map-get($colors , color-negro);
+    &:hover{
+        background-color: #ffffff; 
+    }
 }
 
 /*BOTONES FOOTER*/
@@ -47,6 +64,13 @@
     gap: 10px;
     background-color: map-get($colors , color-blanco);
     color: map-get($colors , color-negro);
+    &:hover {
+        transform: scale(1.06);
+        background-color: #ffffff; 
+        border-radius: 6px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); 
+        transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; // Transiciones suaves
+    }
 }
 
 .button-footer-facebook{
@@ -57,4 +81,22 @@
     @extend .button-footer-instagram;
     background-color:map-get($colors , color-terracota);
     color: map-get($colors , color-blanco);
+    &:hover{
+        background-color: #9e5739; 
+    }
+}
+
+/*BOTÓN FACEBOOK CONTACTO*/
+.s2-contacto{
+    .texto-y-botones{
+        .botones{
+            .boton-contacto-facebook{
+                .button-fondo-negro{
+                    &:hover{
+                        background-color: #000000; 
+                    }
+                }
+            }
+        }
+    }
 }

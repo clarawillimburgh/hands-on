@@ -581,7 +581,7 @@ p {
     max-width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 24rem;
     column-gap: 1.5rem; }
     .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 {
       display: flex;
@@ -589,7 +589,7 @@ p {
       grid-row: 1/2; }
       .s3-colecciones-armonia-2 .armonia-carrousel .foto-1 img {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 1/1;
         object-fit: cover; }
     .s3-colecciones-armonia-2 .armonia-carrousel .foto-2 {
       display: flex;
@@ -1132,16 +1132,28 @@ p {
   background-color: #171717;
   padding: 20px;
   border: none; }
+  .button-fondo-negro:hover, .button-fondo-terracota:hover, .button-fondo-verde:hover, .button-fondo-blanco:hover {
+    transform: scale(1.06);
+    background-color: #806d5c;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; }
 
 .button-fondo-terracota {
   background-color: #AD6140; }
+  .button-fondo-terracota:hover {
+    background-color: #9e5739; }
 
 .button-fondo-verde {
   background-color: #3B838E; }
+  .button-fondo-verde:hover {
+    background-color: #245d66; }
 
 .button-fondo-blanco {
   background-color: #FFFFFF;
   color: #171717; }
+  .button-fondo-blanco:hover {
+    background-color: #ffffff; }
 
 /*BOTONES FOOTER*/
 .button-footer-instagram, .button-footer-facebook, .button-footer-contacto {
@@ -1158,10 +1170,22 @@ p {
   gap: 10px;
   background-color: #FFFFFF;
   color: #171717; }
+  .button-footer-instagram:hover, .button-footer-facebook:hover, .button-footer-contacto:hover {
+    transform: scale(1.06);
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease; }
 
 .button-footer-contacto {
   background-color: #AD6140;
   color: #FFFFFF; }
+  .button-footer-contacto:hover {
+    background-color: #9e5739; }
+
+/*BOTÓN FACEBOOK CONTACTO*/
+.s2-contacto .texto-y-botones .botones .boton-contacto-facebook .button-fondo-negro:hover, .s2-contacto .texto-y-botones .botones .boton-contacto-facebook .button-fondo-terracota:hover, .s2-contacto .texto-y-botones .botones .boton-contacto-facebook .button-fondo-verde:hover, .s2-contacto .texto-y-botones .botones .boton-contacto-facebook .button-fondo-blanco:hover {
+  background-color: #000000; }
 
 /*5 MEDIAQUERY
 Siempre al final

@@ -139,14 +139,16 @@
         max-width: 80%;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
+        grid-template-rows: 24rem;
         column-gap: 1.5rem;
         .foto-1{
             display: flex;
             grid-column: 1/2;
             grid-row: 1/2;
             img{
-                @include img-cover;
+                width: 100%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
             }
         }
         .foto-2{
