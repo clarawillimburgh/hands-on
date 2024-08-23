@@ -6,7 +6,7 @@
 
 /* Estilos para pantallas de 1024px y mayores */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1800px) {
     /* Oculta el botón del menú hamburguesa en pantallas grandes */
     .navbar-toggler {
     display: none;

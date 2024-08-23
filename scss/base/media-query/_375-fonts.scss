@@ -42,11 +42,11 @@
 
     /*h3*/
     .h3-regular{
-        @include h3-style(map-get($colors,color-negro), map-get($font-size, diez), map-get($font-weight,quinientos));
+        @include h3-style(map-get($colors,color-negro), map-get($font-size, doce), map-get($font-weight,quinientos));
     }
 
     .h3-medium{
-        @include h3-style(map-get($colors,color-negro), map-get($font-size, diez), map-get($font-weight,seiscientos));
+        @include h3-style(map-get($colors,color-negro), map-get($font-size, doce), map-get($font-weight,seiscientos));
     }
 
     /*Párrafos*/

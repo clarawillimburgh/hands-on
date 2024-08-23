@@ -3,34 +3,34 @@
 
 /*main-colecciones*/
 @media (max-width:375px){
-        /*Sección 1*/
-        .s1-colecciones{
-            padding-left: 5%;
-            padding-right: 5%;
-            margin-top: 126px;
-            margin-bottom: 20px;
-            justify-content: center;
-            .texto{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                gap: .625rem;
-                margin: 0;
-                h1{
-                    font-weight: 400;
-                    // br{
-                    //     display: flex;
-                    // }
-                }
-                span{
-                    font-weight: 600;
-                    color: map-get($colors , color-negro);
-                }
-                p{
-                    display: none;
-                }
+    /*Sección 1*/
+    .s1-colecciones{
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 126px;
+        margin-bottom: 20px;
+        justify-content: center;
+        .texto{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: .625rem;
+            margin: 0;
+            h1{
+                font-weight: 400;
+                // br{
+                //     display: flex;
+                // }
+            }
+            span{
+                font-weight: 600;
+                color: map-get($colors , color-negro);
+            }
+            p{
+                display: none;
             }
         }
+    }
 
     /*Sección 2*/
     .s2-colecciones-terra-1{

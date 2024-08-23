@@ -6,8 +6,7 @@
 
 /* Estilos para pantallas menores a 1024px */
 
-@media (max-width: 1023.98px) {
-
+@media (min-width: 100px) and (max-width: 1023px){
     .navbar{
         background-color: #f0f0f0 !important;
         width: 100%;

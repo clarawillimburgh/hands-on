@@ -1,0 +1,123 @@
+/*MEDIA QUERY*/
+/*max-width 375px*/
+
+/*main-contacto*/
+
+@media (max-width:375px){
+    /*Sección 1--------------------------*/
+    /*Formulario y foto*/
+    .s1-contacto{
+        @include flex-contenedor;
+        margin-top: 7.875rem;
+        margin-bottom: 40px;
+        .formulario-y-foto{
+            @include grid-column-375;
+            grid-template-rows: 424px 368px 304px 304px;
+            row-gap: 1rem;
+            .titulo-y-formulario{
+                display: flex;
+                flex-direction: column;
+                padding-top: 100px;
+                gap: 1rem;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                justify-content: end;
+                .titulo span{
+                    color:map-get($colors , color-terracota );
+                }
+                .formulario{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1;
+                    .inputs{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 1rem;
+                        padding-left: 18px;
+                        padding-right: 18px;
+                        padding-top: 18px;
+                        padding-bottom: 18px;
+                        background-color:map-get($colors , color-beige);
+                        align-items: end;
+                        input{
+                            width: 100%;
+                            height: 47px;
+                            border-style: none;
+                            padding: 20px;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        textarea{
+                            width:100%;
+                            height: 144px;
+                            border-style: none;
+                            padding: 20px;
+                            font-family: Roboto;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+            .foto{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 4/5;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-3{
+                display: flex;
+                grid-column:1/2;
+                grid-row: 3/4;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    /*Sección 2--------------------------*/
+    .s2-contacto{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        .texto-y-botones{
+            display: flex;
+            width: 90%;
+            .texto{
+                .h3-medium{
+                    font-size: 14px;
+                }
+                margin-left: 8px;
+                margin-right: 20px;
+                display: flex;
+                .texto-contacto{
+                    font-weight:450;
+                }
+            }  
+            .botones{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                align-items: left;
+        
+            }          
+        }
+    }
+}

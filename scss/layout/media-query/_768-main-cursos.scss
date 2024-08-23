@@ -1,0 +1,364 @@
+/*MEDIA QUERY*/
+/*min-width 768px - max-width 1023px*/
+
+/*main-cursos*/
+@media (min-width: 768px) and (max-width: 1023px){
+    /*Sección 1*/
+    .s1-cursos-introduccion{
+        @include flex-contenedor;
+        padding-top: 7.875rem;
+        padding-bottom: 6.25rem;
+        .s1-cursos-card-y-fotos{
+            @include grid-column-1024;
+            grid-template-rows: 482px 20px 298px;
+            row-gap: 1rem;
+            .s1-cursos-card{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                width: 90%;
+                grid-column: 1/2;
+                grid-row: 1/2;
+                align-self:center;
+                justify-self: left;
+                .texto{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .625rem;
+                }
+            }
+            .foto-1{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 1/3;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-2{
+                display: flex;
+                grid-column: 1/2;
+                grid-row: 2/4;
+                img{
+                    @include img-cover;
+                }
+            }
+            .foto-3{
+                display: flex;
+                grid-column: 2/3;
+                grid-row: 3/4;
+                img{
+                    @include img-cover;
+                }
+            }
+        }
+    }
+
+    /*Sección 2--------------------------*/
+    /*Cursos presenciales*/
+    .s2-cursos-presenciales{
+        @include flex-contenedor;
+        flex-direction: column;
+        .titulo{
+            width: 88%;
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    /*Cards cursos presenciales*/
+    .taller-adultos{
+        @include cards-talleres-768;
+        .fondo{
+            background-color: map-get($colors , color-beige);
+            display: flex;
+            flex-direction: row;
+            grid-row: 1/4;
+            grid-column:1/5;
+        }
+        .card{
+            border-style: none;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            grid-row: 2/3;
+            grid-column: 2/5;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            .texto-y-boton{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                gap: 1rem;
+                padding-right: 0px;
+                flex-wrap: wrap;
+                .titulo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .lista{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                div p{
+                    color: map-get($colors , color-gris);
+                    text-align:justify;
+                    font-family: Roboto;
+                    font-size: map-get($font-size , trece);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .foto{
+            grid-column: 4/6;
+            grid-row:2/3;
+            img{
+                @include img-cover;
+            }
+        }
+    }
+
+    .taller-niños{
+        @include cards-talleres-768;
+        .fondo{
+            background-color: map-get($colors , color-beige);
+            display: flex;
+            flex-direction: row;
+            grid-row: 1/4;
+            grid-column:1/5 ;
+        }
+        .card{
+            border-style: none;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            grid-row: 2/3;
+            grid-column: 2/5;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            .texto-y-boton{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                gap: 1rem;
+                padding-right: 50px;
+                flex-wrap: wrap;
+                .titulo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .lista{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                div p{
+                    color: map-get($colors , color-gris);
+                    text-align:justify;
+                    font-family: Roboto;
+                    font-size: map-get($font-size , trece);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .foto{
+            grid-column: 4/6;
+            grid-row:2/3;
+            img{
+                @include img-cover;
+            }
+        }
+    }
+
+    /*Cursos a distancia*/
+    .s2-cursos-a-distancia{
+        @include flex-contenedor;
+        flex-direction: column;
+        .descripcion{
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.875rem;
+            margin-bottom: 1.875rem;
+            gap: .5rem;
+        }
+    }
+    /*Cards cursos a distancia*/
+    /*Técnicas cerámicas*/
+    .tecnicas-ceramicas{
+        @include cards-talleres-768;
+        .fondo{
+            background-color: map-get($colors , color-beige);
+            display: flex;
+            flex-direction: row;
+            grid-row: 1/4;
+            grid-column:1/5;
+        }
+        .card{
+            border-style: none;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            grid-row: 2/3;
+            grid-column: 2/5;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            .texto-y-boton{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                gap: 1rem;
+                padding-right: 50px;
+                flex-wrap: wrap;
+                .titulo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .lista{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                div p{
+                    color: map-get($colors , color-gris);
+                    text-align:justify;
+                    font-family: Roboto;
+                    font-size: map-get($font-size , trece);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .foto{
+            grid-column: 4/6;
+            grid-row:2/3;
+            img{
+                @include img-cover;
+            }
+        }
+    }   
+    /*Esmaltes*/
+    .esmaltes{
+        @include cards-talleres-768;
+        .fondo{
+            background-color: map-get($colors , color-beige);
+            display: flex;
+            flex-direction: row;
+            grid-row: 1/4;
+            grid-column:1/5;
+        }
+        .card{
+            border-style: none;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            grid-row: 2/3;
+            grid-column: 2/5;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            .texto-y-boton{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                gap: 1rem;
+                padding-right: 50px;
+                flex-wrap: wrap;
+                .titulo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .lista{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                div p{
+                    color: map-get($colors , color-gris);
+                    text-align:justify;
+                    font-family: Roboto;
+                    font-size: map-get($font-size , trece);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .foto{
+            grid-column: 4/6;
+            grid-row:2/3;
+            img{
+                @include img-cover;
+            }
+        }
+    }
+    /*Pastas*/
+    .pastas{
+        @include cards-talleres-768;
+        margin-bottom: 3rem;
+        .fondo{
+            background-color: map-get($colors , color-beige);
+            display: flex;
+            flex-direction: row;
+            grid-row: 1/4;
+            grid-column:1/5;
+        }
+        .card{
+            border-style: none;
+            background: none;
+            display: flex;
+            flex-direction: row;
+            grid-row: 2/3;
+            grid-column: 2/5;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            .texto-y-boton{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                gap: 1rem;
+                padding-right: 50px;
+                flex-wrap: wrap;
+                .titulo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                .lista{
+                    display: flex;
+                    flex-direction: column;
+                    gap: .5rem;
+                }
+                div p{
+                    color: map-get($colors , color-gris);
+                    text-align:justify;
+                    font-family: Roboto;
+                    font-size: map-get($font-size , trece);
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        .foto{
+            grid-column: 4/6;
+            grid-row:2/3;
+            img{
+                @include img-cover;
+            }
+        }
+    }
+}

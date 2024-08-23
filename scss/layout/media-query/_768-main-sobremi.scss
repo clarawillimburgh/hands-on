@@ -2,7 +2,7 @@
 /*max-width 1024px*/
 
 /*main-sobremi*/
-@media (max-width:1024px){
+@media (min-width: 768px) and (max-width: 1023px){
     /*Sección 1*/
     .s1-sobre-mi{
         @include flex-contenedor;
@@ -10,7 +10,7 @@
         padding-bottom: 100px;
         .s1-sobre-mi-cards-y-fotos{
             @include grid-column-1024;
-            grid-template-rows: 456px 134px 447px;
+            grid-template-rows: 44% 12% 44%;
             // grid-template-rows: 331px 98px 325px;
             row-gap: 1rem;
             .s1-sobre-mi-card{   
@@ -47,7 +47,7 @@
         padding-bottom:3rem;
         .s3-sobre-mi-cards-y-fotos{
             @include grid-column-1024;
-            grid-template-rows: 507px 83px 508px;
+            grid-template-rows: 369px 60px 369px;
             // grid-template-rows: 46% 8% 46%;
             row-gap: 1rem;
 
@@ -111,5 +111,4 @@
             }
         }
     }
-
 }

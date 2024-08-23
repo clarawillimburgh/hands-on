@@ -35,14 +35,25 @@ Mobible a desktop - CRECIENTE */
 @import "./layout/media-query/1024-header";
 @import "./layout/media-query/1024-main-index";
 @import "./layout/media-query/1024-main-sobremi";
-@import "./layout/media-query/1024-colecciones";
+@import "./layout/media-query/1024-main-colecciones";
+@import "./layout/media-query/1024-main-cursos";
+@import "./layout/media-query/1024-main-contacto";
 @import "./layout/media-query/1024-footer";
+
+/*768 LAYOUT*/
+@import "./layout/media-query/768-main-index";
+@import "./layout/media-query/768-main-sobremi";
+@import "./layout/media-query/768-main-cursos";
+@import "./layout/media-query/768-main-contacto";
+
 
 /*375 LAYOUT*/
 @import "./layout/media-query/375-header";
 @import "./layout/media-query/375-main-index";
 @import "./layout/media-query/375-main-sobremi";
-@import "./layout/media-query/375-colecciones";
+@import "./layout/media-query/375-main-colecciones";
+@import "./layout/media-query/375-main-cursos";
+@import "./layout/media-query/375-main-contacto";
 @import "./layout/media-query/375-footer";
 
 /*1024 COMPONENTS*/

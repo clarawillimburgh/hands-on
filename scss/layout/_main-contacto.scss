@@ -9,7 +9,8 @@
     margin-bottom: 11.25rem;
     .formulario-y-foto{
         @include grid-column;
-        grid-template-rows: 54.875rem;
+        grid-template-rows: 54.875rem 36.75rem;
+        row-gap: 1.5rem;
         .titulo-y-formulario{
             display: flex;
             flex-direction: column;
@@ -69,6 +70,22 @@
                 @include img-cover;
             }
         }
+        .foto-2{
+            display: flex;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            img{
+                @include img-cover;
+            }
+        }
+        .foto-3{
+            display: flex;
+            grid-column:2/3;
+            grid-row: 2/3;
+            img{
+                @include img-cover;
+            }
+        }
     }
 }
 
@@ -84,13 +101,13 @@
         .texto{
             display: flex;
             .texto-contacto{
-            font-weight:450;
+                font-weight:450;
             }
         }  
         .botones{
-        display: flex;
-        flex-direction: row;
-        gap:24px;
+            display: flex;
+            flex-direction: row;
+            gap:24px;
         }          
     }
 }

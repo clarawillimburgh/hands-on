@@ -37,9 +37,33 @@
 @mixin cards-talleres{
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 52% 12% 12% 14%;
+    grid-template-columns: 12% 46% 12% 12% 15%;
     grid-template-rows: 80px 462px 80px;
     margin-bottom: 3.125rem;
+}
+
+@mixin cards-talleres-1024{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem;
+}
+
+@mixin cards-talleres-768{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem;
+}
+
+@mixin cards-talleres-375{
+    width: 100%;
+    display: grid;
+    grid-template-columns:32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem;
 }
 
 /*FONTS MIXINS*/

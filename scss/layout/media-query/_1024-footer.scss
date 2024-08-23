@@ -6,6 +6,7 @@
     .contenedor-footer{
         @include flex-contenedor;
         background-color: map-get($colors , color-negro);
+        margin-top: 1px;
         .footer{
             display: flex;
             flex-direction: row;

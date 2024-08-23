@@ -195,7 +195,7 @@ p {
       grid-column: 2/3;
       grid-row: 1/3;
       position: relative; }
-      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .foto img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
@@ -678,7 +678,7 @@ p {
 
 /*CURSOS*/
 /*main-cursos*/
-/*Sección 1--------------------------*/
+/*Sección 1*/
 .s1-cursos-introduccion {
   display: flex;
   justify-content: center;
@@ -708,6 +708,8 @@ p {
         display: flex;
         flex-direction: column;
         gap: .625rem; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto h1 span {
+          color: #AD6140; }
     .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 {
       display: flex;
       grid-column: 2/3;
@@ -751,7 +753,7 @@ p {
 .taller-adultos {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-columns: 12% 46% 12% 12% 15%;
   grid-template-rows: 80px 462px 80px;
   margin-bottom: 3.125rem; }
   .taller-adultos .fondo {
@@ -774,7 +776,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 570px;
-      gap: 3.5rem;
+      gap: 2rem;
       padding-right: 50px;
       flex-wrap: wrap; }
       .taller-adultos .card .texto-y-boton .titulo {
@@ -793,11 +795,18 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
+  .taller-adultos .foto {
+    grid-column: 3/5;
+    grid-row: 2/3; }
+    .taller-adultos .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 .taller-niños {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-columns: 12% 46% 12% 12% 15%;
   grid-template-rows: 80px 462px 80px;
   margin-bottom: 3.125rem; }
   .taller-niños .fondo {
@@ -820,7 +829,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 570px;
-      gap: 3.5rem;
+      gap: 2rem;
       padding-right: 50px;
       flex-wrap: wrap; }
       .taller-niños .card .texto-y-boton .titulo {
@@ -839,6 +848,13 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
+  .taller-niños .foto {
+    grid-column: 3/5;
+    grid-row: 2/3; }
+    .taller-niños .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*Cursos a distancia*/
 .s2-cursos-a-distancia {
@@ -853,6 +869,7 @@ p {
     width: 80%;
     display: flex;
     flex-direction: column;
+    margin-top: 3.125rem;
     margin-bottom: 3.125rem;
     gap: 30px; }
 
@@ -861,7 +878,7 @@ p {
 .tecnicas-ceramicas {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-columns: 12% 46% 12% 12% 15%;
   grid-template-rows: 80px 462px 80px;
   margin-bottom: 3.125rem; }
   .tecnicas-ceramicas .fondo {
@@ -884,7 +901,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 532px;
-      gap: 3.5rem;
+      gap: 2rem;
       padding-right: 50px;
       flex-wrap: wrap; }
       .tecnicas-ceramicas .card .texto-y-boton .titulo {
@@ -903,12 +920,19 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
+  .tecnicas-ceramicas .foto {
+    grid-column: 3/5;
+    grid-row: 2/3; }
+    .tecnicas-ceramicas .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*Esmaltes*/
 .esmaltes {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-columns: 12% 46% 12% 12% 15%;
   grid-template-rows: 80px 462px 80px;
   margin-bottom: 3.125rem; }
   .esmaltes .fondo {
@@ -931,7 +955,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 532px;
-      gap: 3.5rem;
+      gap: 2rem;
       padding-right: 50px;
       flex-wrap: wrap; }
       .esmaltes .card .texto-y-boton .titulo {
@@ -950,14 +974,22 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
+  .esmaltes .foto {
+    grid-column: 3/5;
+    grid-row: 2/3; }
+    .esmaltes .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*Pastas*/
 .pastas {
   width: 100%;
   display: grid;
-  grid-template-columns: 10% 52% 12% 12% 14%;
+  grid-template-columns: 12% 46% 12% 12% 15%;
   grid-template-rows: 80px 462px 80px;
-  margin-bottom: 3.125rem; }
+  margin-bottom: 3.125rem;
+  margin-bottom: 6.25rem; }
   .pastas .fondo {
     background-color: #E9E7D6;
     display: flex;
@@ -978,7 +1010,7 @@ p {
       display: flex;
       flex-direction: column;
       width: 532px;
-      gap: 3.5rem;
+      gap: 2rem;
       padding-right: 50px;
       flex-wrap: wrap; }
       .pastas .card .texto-y-boton .titulo {
@@ -997,6 +1029,13 @@ p {
         font-style: normal;
         font-weight: 400;
         line-height: normal; }
+  .pastas .foto {
+    grid-column: 3/5;
+    grid-row: 2/3; }
+    .pastas .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*CONTACTO*/
 /*main-contacto*/
@@ -1016,7 +1055,8 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
-    grid-template-rows: 54.875rem; }
+    grid-template-rows: 54.875rem 36.75rem;
+    row-gap: 1.5rem; }
     .s1-contacto .formulario-y-foto .titulo-y-formulario {
       display: flex;
       flex-direction: column;
@@ -1070,6 +1110,22 @@ p {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+    .s1-contacto .formulario-y-foto .foto-2 {
+      display: flex;
+      grid-column: 1/2;
+      grid-row: 2/3; }
+      .s1-contacto .formulario-y-foto .foto-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .s1-contacto .formulario-y-foto .foto-3 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 2/3; }
+      .s1-contacto .formulario-y-foto .foto-3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 /*Sección 2--------------------------*/
 .s2-contacto {
@@ -1096,6 +1152,8 @@ p {
 
 /*FOOTER*/
 .contenedor-footer {
+  position: relative;
+  bottom: 0px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -1374,14 +1432,14 @@ Mobible a desktop - CRECIENTE */
   /*h3*/
   .h3-regular {
     color: #171717;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     font-weight: 500;
     font-family: Roboto;
     font-style: normal;
     line-height: normal; }
   .h3-medium {
     color: #171717;
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     font-weight: 600;
     font-family: Roboto;
     font-style: normal;
@@ -1402,7 +1460,7 @@ Mobible a desktop - CRECIENTE */
 /*NAVBAR BOOTSTRAP*/
 /*header*/
 /* Estilos para pantallas de 1024px y mayores */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1800px) {
   /* Oculta el botón del menú hamburguesa en pantallas grandes */
   .navbar-toggler {
     display: none; }
@@ -1429,7 +1487,7 @@ Mobible a desktop - CRECIENTE */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
-    grid-template-rows: 355px 74px 330px;
+    grid-template-rows: 488px 102px 454px;
     row-gap: 1rem; }
     .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 {
       gap: 2rem;
@@ -1437,7 +1495,7 @@ Mobible a desktop - CRECIENTE */
       .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto {
         gap: 1.5rem; }
         .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img {
-          width: 281px; }
+          width: 350px; }
     .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 {
       display: flex;
       grid-column: 2/3;
@@ -1446,7 +1504,8 @@ Mobible a desktop - CRECIENTE */
       .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        max-width: 443px; }
       .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal {
         right: -4%; }
         .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal img {
@@ -1459,7 +1518,7 @@ Mobible a desktop - CRECIENTE */
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 6%;
-    height: 15.8125rem; }
+    height: 21.875rem; }
     .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal {
       left: 4%; }
       .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal img {
@@ -1517,7 +1576,7 @@ Mobible a desktop - CRECIENTE */
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 1rem;
-      grid-template-rows: 44% 12% 44%;
+      grid-template-rows: 456px 134px 447px;
       row-gap: 1rem; }
       .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card {
         gap: .625rem;
@@ -1550,7 +1609,7 @@ Mobible a desktop - CRECIENTE */
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 1rem;
-      grid-template-rows: 369px 60px 369px;
+      grid-template-rows: 507px 83px 508px;
       row-gap: 1rem; }
       .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 {
         display: flex;
@@ -1849,6 +1908,477 @@ Mobible a desktop - CRECIENTE */
 
 /*MEDIA QUERY*/
 /*max-width 1024px*/
+/*main-cursos*/
+@media (max-width: 1024px) {
+  /*Sección 1*/
+  .s1-cursos-introduccion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    padding-bottom: 6.25rem; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 482px 20px 298px;
+      row-gap: 1rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: left; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/3; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/4; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 3/4; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2*/
+  /*Cursos presenciales*/
+  .s2-cursos-presenciales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-presenciales .titulo {
+      width: 88%;
+      margin-bottom: 1.875rem; }
+  /*Cards cursos presenciales*/
+  .taller-adultos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem; }
+    .taller-adultos .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/4; }
+    .taller-adultos .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-adultos .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        gap: 2rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .taller-adultos .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .taller-adultos .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .taller-adultos .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-adultos .foto {
+      grid-column: 3/5;
+      grid-row: 2/3; }
+      .taller-adultos .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .taller-niños {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem; }
+    .taller-niños .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/4; }
+    .taller-niños .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-niños .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        gap: 2rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .taller-niños .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .taller-niños .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .taller-niños .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-niños .foto {
+      grid-column: 3/5;
+      grid-row: 2/3; }
+      .taller-niños .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Cursos a distancia*/
+  .s2-cursos-a-distancia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-a-distancia .descripcion {
+      width: 88%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+      gap: .625rem; }
+  /*Cards cursos a distancia*/
+  /*Técnicas cerámicas*/
+  .tecnicas-ceramicas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem; }
+    .tecnicas-ceramicas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/4; }
+    .tecnicas-ceramicas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .tecnicas-ceramicas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        gap: 2rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .tecnicas-ceramicas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .tecnicas-ceramicas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .tecnicas-ceramicas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .tecnicas-ceramicas .foto {
+      grid-column: 3/5;
+      grid-row: 2/3; }
+      .tecnicas-ceramicas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Esmaltes*/
+  .esmaltes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem; }
+    .esmaltes .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/4; }
+    .esmaltes .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .esmaltes .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        gap: 2rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .esmaltes .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .esmaltes .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .esmaltes .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .esmaltes .foto {
+      grid-column: 3/5;
+      grid-row: 2/3; }
+      .esmaltes .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Pastas*/
+  .pastas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 46% 12% 12% 15%;
+    grid-template-rows: 57px 336px 57px;
+    margin-bottom: 1.875rem;
+    margin-bottom: 3rem; }
+    .pastas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/4; }
+    .pastas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .pastas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+        gap: 2rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .pastas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .pastas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+        .pastas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .pastas .foto {
+      grid-column: 3/5;
+      grid-row: 2/3; }
+      .pastas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*main-contacto*/
+@media (max-width: 1024px) {
+  /*Sección 1--------------------------*/
+  /*Formulario y foto*/
+  .s1-contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-top: 7.875rem;
+    margin-bottom: 5rem; }
+    .s1-contacto .formulario-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 40.625rem 27.125rem;
+      row-gap: 1rem; }
+      .s1-contacto .formulario-y-foto .titulo-y-formulario {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 1rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: end; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .titulo span {
+          color: #AD6140; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario {
+          display: flex;
+          flex-direction: column;
+          gap: 1; }
+          .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            padding-left: 44px;
+            padding-right: 44px;
+            padding-top: 44px;
+            padding-bottom: 44px;
+            background-color: #E9E7D6;
+            align-items: end; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs input {
+              width: 100%;
+              height: 64px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs textarea {
+              width: 100%;
+              height: 200px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 13px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+      .s1-contacto .formulario-y-foto .foto {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s1-contacto .formulario-y-foto .foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s1-contacto .formulario-y-foto .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-3 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/3; }
+        .s1-contacto .formulario-y-foto .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2--------------------------*/
+  .s2-contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3.75rem; }
+    .s2-contacto .texto-y-botones {
+      display: flex;
+      width: 88%;
+      justify-content: space-between;
+      align-items: center; }
+      .s2-contacto .texto-y-botones .texto {
+        margin-left: 20px;
+        display: flex; }
+        .s2-contacto .texto-y-botones .texto .h3-medium {
+          font-size: 20px; }
+        .s2-contacto .texto-y-botones .texto .texto-contacto {
+          font-weight: 450; }
+      .s2-contacto .texto-y-botones .botones {
+        display: flex;
+        flex-direction: row;
+        gap: 16px; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
 /*Footer*/
 @media (max-width: 1024px) {
   .contenedor-footer {
@@ -1858,7 +2388,8 @@ Mobible a desktop - CRECIENTE */
     align-items: center;
     justify-items: center;
     max-width: 100%;
-    background-color: #171717; }
+    background-color: #171717;
+    margin-top: 1px; }
     .contenedor-footer .footer {
       display: flex;
       flex-direction: row;
@@ -1874,13 +2405,671 @@ Mobible a desktop - CRECIENTE */
       .contenedor-footer .footer .logo-footer img {
         width: 117px; } }
 
+/*768 LAYOUT*/
+/*MEDIA QUERY*/
+/*min-width 768px - max-width 1023px*/
+/*main-index*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Sección 1*/
+  .s1-inicio .s1-inicio-cards-y-fotos {
+    width: 88%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    grid-template-rows: 355px 74px 330px;
+    row-gap: 1rem; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 {
+      gap: 2rem;
+      width: 17.5625rem; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto {
+        gap: 1.5rem; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-1 .logo-y-texto img {
+          width: 281px; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 {
+      display: flex;
+      grid-column: 2/3;
+      grid-row: 1/3;
+      position: relative; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 443px; }
+      .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal {
+        right: -4%; }
+        .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-foto-1 .rayitas-beige-horizontal img {
+          width: 1.875rem; }
+    .s1-inicio .s1-inicio-cards-y-fotos .s1-inicio-card-2 {
+      gap: 2rem;
+      width: 15.875rem; }
+  /*Sección 2*/
+  .s2-inicio {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 6%;
+    height: 15.8125rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal {
+      left: 4%; }
+      .s2-inicio .s2-inicio-card-y-fotos .rayitas-terracota-horizontal img {
+        width: 1.875rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-fotos {
+      height: 70%;
+      gap: 1rem; }
+    .s2-inicio .s2-inicio-card-y-fotos .s2-inicio-card {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 13rem;
+      margin-left: 6%; }
+  /*Sección 3*/
+  .s3-inicio {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3rem; }
+    .s3-inicio .s3-inicio-card-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 100%; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-card {
+        gap: 2rem;
+        width: 240px; }
+      .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal {
+        position: absolute;
+        left: 95%;
+        top: 8%; }
+        .s3-inicio .s3-inicio-card-y-foto .s3-inicio-foto .rayitas-beige-horizontal img {
+          width: 1.875rem; } }
+
+/*MEDIA QUERY*/
+/*max-width 1024px*/
+/*main-sobremi*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Sección 1*/
+  .s1-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    padding-bottom: 100px; }
+    .s1-sobre-mi .s1-sobre-mi-cards-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 44% 12% 44%;
+      row-gap: 1rem; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card {
+        gap: .625rem;
+        width: 95%; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span1, .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-card .span2 {
+          font-size: 1.375rem; }
+      .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal {
+        position: absolute;
+        right: -5%;
+        top: 8%; }
+        .s1-sobre-mi .s1-sobre-mi-cards-y-fotos .s1-sobre-mi-foto-1 .rayitas-beige-horizontal img {
+          width: 30px; }
+  /*Sección 2*/
+  .s2-sobre-mi {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-left: 6%;
+    padding-right: 6%; }
+  /*Sección 3*/
+  .s3-sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-bottom: 3rem; }
+    .s3-sobre-mi .s3-sobre-mi-cards-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 369px 60px 369px;
+      row-gap: 1rem; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: .625rem;
+        width: 85%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        align-self: center; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-1 span {
+          color: #3B838E;
+          font-family: Roboto;
+          font-size: 1.375rem;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 700; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        position: relative; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-1 .rayitas-beige-horizontal {
+          width: 30px;
+          position: absolute;
+          left: 95%;
+          top: 6%; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: center;
+        justify-self: left; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-card-2 .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/4; }
+        .s3-sobre-mi .s3-sobre-mi-cards-y-fotos .s3-sobre-mi-foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*min-width 768px - max-width 1023px*/
+/*main-cursos*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Sección 1*/
+  .s1-cursos-introduccion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 7.875rem;
+    padding-bottom: 6.25rem; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 482px 20px 298px;
+      row-gap: 1rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: left; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .625rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/3; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/4; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 3/4; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2--------------------------*/
+  /*Cursos presenciales*/
+  .s2-cursos-presenciales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-presenciales .titulo {
+      width: 88%;
+      margin-bottom: 1.875rem; }
+  /*Cards cursos presenciales*/
+  .taller-adultos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem; }
+    .taller-adultos .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/5; }
+    .taller-adultos .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-adultos .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .taller-adultos .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .taller-adultos .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .taller-adultos .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-adultos .foto {
+      grid-column: 4/6;
+      grid-row: 2/3; }
+      .taller-adultos .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .taller-niños {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem; }
+    .taller-niños .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/5; }
+    .taller-niños .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-niños .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .taller-niños .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .taller-niños .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .taller-niños .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-niños .foto {
+      grid-column: 4/6;
+      grid-row: 2/3; }
+      .taller-niños .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Cursos a distancia*/
+  .s2-cursos-a-distancia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-a-distancia .descripcion {
+      width: 88%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.875rem;
+      margin-bottom: 1.875rem;
+      gap: .5rem; }
+  /*Cards cursos a distancia*/
+  /*Técnicas cerámicas*/
+  .tecnicas-ceramicas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem; }
+    .tecnicas-ceramicas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/5; }
+    .tecnicas-ceramicas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .tecnicas-ceramicas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .tecnicas-ceramicas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .tecnicas-ceramicas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .tecnicas-ceramicas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .tecnicas-ceramicas .foto {
+      grid-column: 4/6;
+      grid-row: 2/3; }
+      .tecnicas-ceramicas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Esmaltes*/
+  .esmaltes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem; }
+    .esmaltes .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/5; }
+    .esmaltes .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .esmaltes .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .esmaltes .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .esmaltes .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .esmaltes .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .esmaltes .foto {
+      grid-column: 4/6;
+      grid-row: 2/3; }
+      .esmaltes .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Pastas*/
+  .pastas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8% 46% 12% 12% 15%;
+    grid-template-rows: 50px 300px 50px;
+    margin-bottom: 1.875rem;
+    margin-bottom: 3rem; }
+    .pastas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/4;
+      grid-column: 1/5; }
+    .pastas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/3;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .pastas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        gap: 1rem;
+        padding-right: 50px;
+        flex-wrap: wrap; }
+        .pastas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .pastas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+        .pastas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.8125rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .pastas .foto {
+      grid-column: 4/6;
+      grid-row: 2/3; }
+      .pastas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*min-width 768px and max-width 1023px*/
+/*main-contacto*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Sección 1--------------------------*/
+  /*Formulario y foto*/
+  .s1-contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-top: 7.875rem;
+    margin-bottom: 5rem; }
+    .s1-contacto .formulario-y-foto {
+      width: 88%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      grid-template-rows: 29.375rem 19.75rem;
+      row-gap: 1rem; }
+      .s1-contacto .formulario-y-foto .titulo-y-formulario {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 1rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: end; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .titulo span {
+          color: #AD6140; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario {
+          display: flex;
+          flex-direction: column;
+          gap: 1; }
+          .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            background-color: #E9E7D6;
+            align-items: end; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs input {
+              width: 100%;
+              height: 47px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs textarea {
+              width: 100%;
+              height: 144px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+      .s1-contacto .formulario-y-foto .foto {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 1/2; }
+        .s1-contacto .formulario-y-foto .foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s1-contacto .formulario-y-foto .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-3 {
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 2/3; }
+        .s1-contacto .formulario-y-foto .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2--------------------------*/
+  .s2-contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-bottom: 3.75rem; }
+    .s2-contacto .texto-y-botones {
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-items: center; }
+      .s2-contacto .texto-y-botones .texto {
+        margin-left: 20px;
+        display: flex; }
+        .s2-contacto .texto-y-botones .texto .h3-medium {
+          font-size: 14px; }
+        .s2-contacto .texto-y-botones .texto .texto-contacto {
+          font-weight: 450; }
+      .s2-contacto .texto-y-botones .botones {
+        display: flex;
+        flex-direction: row;
+        gap: 14px; } }
+
 /*375 LAYOUT*/
 /*MEDIA QUERY*/
 /*max-width 375px*/
 /*NAVBAR BOOTSTRAP*/
 /*header*/
 /* Estilos para pantallas menores a 1024px */
-@media (max-width: 1023.98px) {
+@media (min-width: 100px) and (max-width: 1023px) {
   .navbar {
     background-color: #f0f0f0 !important;
     width: 100%;
@@ -2438,6 +3627,501 @@ Mobible a desktop - CRECIENTE */
         display: none; }
         .s4-colecciones-arce-2 .arce-carrousel .foto-3 img {
           visibility: hidden; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*main-cursos*/
+@media (max-width: 375px) {
+  /*Sección 1*/
+  .s1-cursos-introduccion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    padding-top: 126px;
+    padding-bottom: 60px; }
+    .s1-cursos-introduccion .s1-cursos-card-y-fotos {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 326px 415px 195px 236px;
+      row-gap: 1rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        align-self: center;
+        justify-self: center; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .s1-cursos-card .texto {
+          display: flex;
+          flex-direction: column;
+          gap: .5rem; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-1 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 3/4; }
+        .s1-cursos-introduccion .s1-cursos-card-y-fotos .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2*/
+  /*Cursos presenciales*/
+  .s2-cursos-presenciales {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-presenciales .titulo {
+      width: 90%;
+      margin-bottom: 24px; }
+  /*Cards cursos presenciales*/
+  .taller-adultos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem; }
+    .taller-adultos .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/6;
+      grid-column: 1/4; }
+    .taller-adultos .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/5;
+      grid-column: 2/3;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-adultos .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: .3125rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .taller-adultos .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .3125rem; }
+          .taller-adultos .card .texto-y-boton .titulo p {
+            text-align: left; }
+        .taller-adultos .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: 0; }
+          .taller-adultos .card .texto-y-boton .lista p {
+            text-align: left; }
+            .taller-adultos .card .texto-y-boton .lista p .p-negrita {
+              font-size: .625rem; }
+        .taller-adultos .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-adultos .foto {
+      grid-column: 3/5;
+      grid-row: 3/4; }
+      .taller-adultos .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .taller-niños {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem; }
+    .taller-niños .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/6;
+      grid-column: 1/4; }
+    .taller-niños .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/5;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .taller-niños .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: .3125rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .taller-niños .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .3125rem; }
+          .taller-niños .card .texto-y-boton .titulo p {
+            text-align: left; }
+        .taller-niños .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: 0; }
+          .taller-niños .card .texto-y-boton .lista p {
+            text-align: left; }
+            .taller-niños .card .texto-y-boton .lista p .p-negrita {
+              font-size: .625rem; }
+        .taller-niños .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .taller-niños .foto {
+      grid-column: 3/5;
+      grid-row: 3/4; }
+      .taller-niños .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Cursos a distancia*/
+  .s2-cursos-a-distancia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    flex-direction: column; }
+    .s2-cursos-a-distancia .descripcion {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      gap: .3125rem; }
+  /*Cards cursos a distancia*/
+  /*Técnicas cerámicas*/
+  .tecnicas-ceramicas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem; }
+    .tecnicas-ceramicas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/6;
+      grid-column: 1/4; }
+    .tecnicas-ceramicas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/5;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .tecnicas-ceramicas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: .3125rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .tecnicas-ceramicas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .3125rem; }
+          .tecnicas-ceramicas .card .texto-y-boton .titulo p {
+            text-align: left; }
+        .tecnicas-ceramicas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+          .tecnicas-ceramicas .card .texto-y-boton .lista p {
+            text-align: left; }
+            .tecnicas-ceramicas .card .texto-y-boton .lista p .p-negrita {
+              font-size: .625rem; }
+        .tecnicas-ceramicas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .tecnicas-ceramicas .foto {
+      grid-column: 3/5;
+      grid-row: 3/4; }
+      .tecnicas-ceramicas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Esmaltes*/
+  .esmaltes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem; }
+    .esmaltes .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/6;
+      grid-column: 1/4; }
+    .esmaltes .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/5;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .esmaltes .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: .3125rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .esmaltes .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .3125rem; }
+          .esmaltes .card .texto-y-boton .titulo p {
+            text-align: left; }
+        .esmaltes .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+          .esmaltes .card .texto-y-boton .lista p {
+            text-align: left; }
+            .esmaltes .card .texto-y-boton .lista p .p-negrita {
+              font-size: .625rem; }
+        .esmaltes .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .esmaltes .foto {
+      grid-column: 3/5;
+      grid-row: 3/4; }
+      .esmaltes .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  /*Pastas*/
+  .pastas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32px 200px 94px;
+    grid-template-rows: 26px 39px 250px 39px 26px;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem; }
+    .pastas .fondo {
+      background-color: #E9E7D6;
+      display: flex;
+      flex-direction: row;
+      grid-row: 1/6;
+      grid-column: 1/4; }
+    .pastas .card {
+      border-style: none;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      grid-row: 2/5;
+      grid-column: 2/5;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
+      .pastas .card .texto-y-boton {
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: .3125rem;
+        padding-right: 0px;
+        flex-wrap: wrap; }
+        .pastas .card .texto-y-boton .titulo {
+          display: flex;
+          flex-direction: column;
+          gap: .3125rem; }
+          .pastas .card .texto-y-boton .titulo p {
+            text-align: left; }
+        .pastas .card .texto-y-boton .lista {
+          display: flex;
+          flex-direction: column;
+          gap: 0rem; }
+          .pastas .card .texto-y-boton .lista p {
+            text-align: left; }
+            .pastas .card .texto-y-boton .lista p .p-negrita {
+              font-size: .625rem; }
+        .pastas .card .texto-y-boton div p {
+          color: #757575;
+          text-align: justify;
+          font-family: Roboto;
+          font-size: 0.625rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal; }
+    .pastas .foto {
+      grid-column: 3/5;
+      grid-row: 3/4; }
+      .pastas .foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; } }
+
+/*MEDIA QUERY*/
+/*max-width 375px*/
+/*main-contacto*/
+@media (max-width: 375px) {
+  /*Sección 1--------------------------*/
+  /*Formulario y foto*/
+  .s1-contacto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    margin-top: 7.875rem;
+    margin-bottom: 40px; }
+    .s1-contacto .formulario-y-foto {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 424px 368px 304px 304px;
+      row-gap: 1rem; }
+      .s1-contacto .formulario-y-foto .titulo-y-formulario {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        gap: 1rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: end; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .titulo span {
+          color: #AD6140; }
+        .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario {
+          display: flex;
+          flex-direction: column;
+          gap: 1; }
+          .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            background-color: #E9E7D6;
+            align-items: end; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs input {
+              width: 100%;
+              height: 47px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+            .s1-contacto .formulario-y-foto .titulo-y-formulario .formulario .inputs textarea {
+              width: 100%;
+              height: 144px;
+              border-style: none;
+              padding: 20px;
+              font-family: Roboto;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal; }
+      .s1-contacto .formulario-y-foto .foto {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3; }
+        .s1-contacto .formulario-y-foto .foto img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-2 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5; }
+        .s1-contacto .formulario-y-foto .foto-2 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .s1-contacto .formulario-y-foto .foto-3 {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 3/4; }
+        .s1-contacto .formulario-y-foto .foto-3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*Sección 2--------------------------*/
+  .s2-contacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px; }
+    .s2-contacto .texto-y-botones {
+      display: flex;
+      width: 90%; }
+      .s2-contacto .texto-y-botones .texto {
+        margin-left: 8px;
+        margin-right: 20px;
+        display: flex; }
+        .s2-contacto .texto-y-botones .texto .h3-medium {
+          font-size: 14px; }
+        .s2-contacto .texto-y-botones .texto .texto-contacto {
+          font-weight: 450; }
+      .s2-contacto .texto-y-botones .botones {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: left; } }
 
 /*MEDIA QUERY*/
 /*max-width 375px*/
